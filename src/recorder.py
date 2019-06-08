@@ -1,6 +1,5 @@
 import pyaudio
 import wave
-
 import os
 
 from src.garcon import Garcon
@@ -16,7 +15,14 @@ WAVE_FN_EXT = '.wav'
 gc = Garcon()
 
 class Recorder:
+	'''
+	Class for recording audio.
+	'''
 	def __init__(self, recordings_dir=RECORDING_DIR):
+		'''
+		Inits a recorder.
+		:param recordings_dir: path to recordings dir
+		'''
 		self.__recordings_dir = recordings_dir
 		self.__chunk = CHUNK
 		self.__format = FORMAT
@@ -27,13 +33,20 @@ class Recorder:
 		self.__record_idx = 0
 
 	def record(self, record_name=''):
+		'''
+		Records audio from pc's mic and saves it as record_name.
+		:param record_name: name of file
+		'''
 		gc.enter_func()
 		record_name = record_name if record_name else f'record_{self.__record_idx}'
-		wf_name = os.path.join(RECORDING_DIR, record_name+WAVE_FN_EXT)
+		wf_name = os.path.join(RECORDING_DIR, record_name + WAVE_FN_EXT)
 		frames = self.__get_record_frames()
 		self.__write_recording(frames, wf_name)
 
 	def __write_recording(self, frames, wf_name):
+		'''
+		Writes recording to file.
+		'''
 		with wave.open(wf_name, 'wb') as wf:
 			wf.setnchannels(self.__channels)
 			wf.setsampwidth(self.__p.get_sample_size(self.__format))
@@ -41,6 +54,10 @@ class Recorder:
 			wf.writeframes(b''.join(frames))
 
 	def __get_record_frames(self):
+		'''
+		Gets recording frames (actually performs the recording)
+		:return: type=list
+		'''
 		stream = self.__p.open(format=self.__format, channels=self.__channels,
 							   rate=self.__rate, input=True,
 							   frames_per_buffer=self.__chunk)
