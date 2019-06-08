@@ -28,13 +28,13 @@ class Recorder:
 
 	def record(self, record_name=''):
 		gc.enter_func()
-		record_name = record_name if record_name else f'record_n{self.record_idx}'
-		wf_name = os.path.join(RECORDING_DIR, record_name, WAVE_FN_EXT)
+		record_name = record_name if record_name else f'record_{self.__record_idx}'
+		wf_name = os.path.join(RECORDING_DIR, record_name+WAVE_FN_EXT)
 		frames = self.__get_record_frames()
 		self.__write_recording(frames, wf_name)
 
 	def __write_recording(self, frames, wf_name):
-		with wave.open(wf_name) as wf:
+		with wave.open(wf_name, 'wb') as wf:
 			wf.setnchannels(self.__channels)
 			wf.setsampwidth(self.__p.get_sample_size(self.__format))
 			wf.setframerate(self.__rate)
