@@ -34,8 +34,7 @@ class SpeechRecognizer():
 			   parse=False):
 		'''
 		Records speech from the pc's mic, parses it to text and saves
-		it as a
-		.wav file
+		it as a		.wav file
 		:param record_name: name of recording. 	type=string
 		:return: text parsed from recording.	type=string
 		'''
