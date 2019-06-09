@@ -47,12 +47,15 @@ class TrainDataGenerator:
 		return dict
 
 	def generate_single_sample(self):
-		tone = self.__get_tone_from_user()
+		label = self.__get_tone_from_user()
+		dir_name = self.__get_label_dir_name(label)
+		fn = os.path.join(dir_name, )
+		self.__sr.record(fn)
 
 	def __get_tone_from_user(self):
 		'''
 		Recieves tone (label) from user in the cmd line.
-		:return: the chosen tone (label)
+		:return: the chosen tone (label) as int
 		'''
 		print(CHOOSE_TONE_PROMPT)
 		for key, val in self.__labels_dict.items():
@@ -61,7 +64,7 @@ class TrainDataGenerator:
 		while (not chosen_tone.isdigit()):
 			time.sleep(1)
 			chosen_tone = input(CHOOSE_DIGIT_PROMPT)
-		return chosen_tone
+		return int(chosen_tone)
 
 	def generate_predefined_data(self, speak_by_label=False):
 		'''
@@ -82,7 +85,6 @@ class TrainDataGenerator:
 			for rec_idx, text_row in self.__text_df.iterrows():
 				text = text_row['text']
 				self.__record_predefined_bit(text, val, rec_idx)
-
 
 	def __generate_by_text(self):
 		'''
