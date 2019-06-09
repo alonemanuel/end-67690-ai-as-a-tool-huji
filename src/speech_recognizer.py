@@ -5,6 +5,8 @@ import speech_recognition as sr
 
 from src.garcon import Garcon
 
+MAX_REC_LENGTH = 7
+
 DEF_TXT_PROMPT = ''
 
 DEF_POST_PROMPT = 'Done recording'
@@ -69,9 +71,10 @@ class SpeechRecognizer():
 				print('***')
 				print(txt_prompt)
 				print('***')
-				time.sleep()
+				time.sleep(1)
 			self.__countdown()
-			audio_source = self.__r.listen(source)
+			audio_source = self.__r.listen(source, timeout=1,
+										   phrase_time_limit=MAX_REC_LENGTH)
 			print(post_prompt)
 		return audio_source
 
