@@ -3,20 +3,25 @@ from enum import Enum
 import re
 import shutil
 
+from src.garcon import Garcon
+
 WAV_EXTN = '.wav'
 
-DATA_DIR = 'data'
+DATA_DIR = os.path.join('..', 'data')
 ACTORS_DIR = os.path.join(DATA_DIR, 'Audio_Speech_Actors_01-24')
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 EMOTION_GROUP = 2
 
+gc = Garcon()
+
 class Grouping(Enum):
 	MODALITY = 0
-	EMOTION = 1
-	INTENSITY = 2
-	Statement = 3
-	REPETITION = 4
-	ACTOR = 5
+	VOCAL = 1
+	EMOTION = 2
+	INTENSITY = 3
+	STATEMENT = 4
+	REPETITION = 5
+	ACTOR = 6
 
 class Modality(Enum):
 	FULL_AV = '01'
@@ -57,8 +62,9 @@ class ActorDataParser:
 	def __get_emotion_dirs_dict(self):
 		dict = {}
 		for emotion in self.__emotions_dict.values():
-			dir_name = os.path.join(DATA_DIR, EMOTIONS_DIR, emotion)
+			dir_name = os.path.join(EMOTIONS_DIR, emotion)
 			dict[emotion] = dir_name
+		return dict
 
 	def __open_emotion_dirs(self):
 		for dir_name in self.__emotion_dirs_dict.values():
@@ -95,36 +101,40 @@ class ActorDataParser:
 		return dict
 
 	def __get_file_emotion(self, fn):
-		m = re.search('\\d\\d', fn)
-		emotion_code = m.group(EMOTION_GROUP)
+		print(fn)
+		m = re.findall(r'\d\d', fn)
+		emotion_code = m[EMOTION_GROUP]
 		return self.__emotions_dict[emotion_code]
 
 	def parse(self):
 		self.__open_emotion_dirs()
 
-		for actor_dir in ACTORS_DIR:
+		for actor_dir in os.listdir(ACTORS_DIR):
+			gc.log_var(actor_dir=actor_dir)
 			for fn in os.listdir(os.path.join(ACTORS_DIR, actor_dir)):
+				gc.log_var(fn=fn)
 				emotion = self.__get_file_emotion(fn)
-				decoded = self.__get_decoded_name(fn)
+				decoded = self.__get_decoded_name(fn, actor_dir)
 				src = os.path.join(ACTORS_DIR, actor_dir, fn)
 				emotion_dir = self.__emotion_dirs_dict[emotion]
 				dest = os.path.join(emotion_dir, decoded)
 				shutil.move(src, dest)
 
-	def __get_decoded_name(self, fn):
-		grouped = re.search('\\d\\d', fn)
+	def __get_decoded_name(self, fn, actor_dir):
+		grouped = re.findall('\\d\\d', fn)
 
 		emotion = grouped[Grouping.EMOTION.value]
 		emotion = self.__emotions_dict[emotion]
 		gender = self.__get_gender(grouped[Grouping.ACTOR.value])
+		actor = self.__get_actor(actor_dir)
 		repetition = grouped[Grouping.REPETITION.value]
 		repetition = self.__repetition_dict[repetition]
 		intensity = grouped[Grouping.INTENSITY.value]
 		intensity = self.__intensity_dict[intensity]
-		statement = grouped[Grouping.Statement.value]
+		statement = grouped[Grouping.STATEMENT.value]
 		statement = self.__statement_dict[statement]
 
-		segs = [emotion, intensity, repetition, statement, gender]
+		segs = [emotion, intensity, statement, gender, actor, repetition]
 		return '_'.join(segs) + WAV_EXTN
 
 	def __get_gender(self, gender_encoding):
@@ -132,3 +142,7 @@ class ActorDataParser:
 		digit = int(digit_char)
 		gender = 'm' if (digit % 2) else 'f'
 		return gender
+
+	def __get_actor(self, actor_dir):
+		grouped = re.findall('\\d\\d', actor_dir)
+		return 'act' + grouped[0]
