@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_generator.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,14 +23,15 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="1" />
           <entry key="labels_to_sample" value="1" />
-          <entry key="py" value="11" />
+          <entry key="py" value="12" />
           <entry key="test" value="1" />
           <entry key="txt" value="2" />
           <entry key="wav" value="2" />
@@ -38,16 +42,16 @@
         <counts>
           <entry key="CSV" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="11" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="638" />
+          <entry key="Python Console" value="1131" />
           <entry key="csv" value="51" />
           <entry key="dummy" value="9" />
           <entry key="labels_to_sample" value="46" />
-          <entry key="py" value="10209" />
+          <entry key="py" value="13188" />
           <entry key="test" value="11" />
           <entry key="text_to_sample" value="19" />
           <entry key="words_to_sample" value="91" />
@@ -57,18 +61,18 @@
         <counts>
           <entry key="CSV" value="188" />
           <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Python" value="10847" />
+          <entry key="Python" value="14319" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -79,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/indexes/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="52020">
               <caret line="3123" selection-start-line="3123" selection-end-line="3123" />
             </state>
           </provider>
@@ -88,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/series.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="11713">
               <caret line="766" selection-start-line="766" selection-end-line="766" />
             </state>
           </provider>
@@ -97,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/io/parsers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="10778">
               <caret line="677" selection-start-line="677" selection-end-line="677" />
             </state>
           </provider>
@@ -106,14 +110,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/speech_recognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="1207">
               <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1560094959296" expanded="true" signature="384:387" ph="..." />
                 <marker date="1560094959296" expanded="true" signature="632:1196" ph="..." />
-                <marker date="1560094959296" expanded="true" signature="1954:2037" ph="..." />
-                <marker date="1560094959296" expanded="true" signature="2209:2350" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/preprocessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
+            <state relative-caret-position="663">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -132,20 +134,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="129" column="11" lean-forward="true" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+            <state relative-caret-position="394">
+              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1560094959293" expanded="true" signature="692:749" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="1086:1356" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="1667:1928" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="2554:2722" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="2947:2948" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="3436:3545" ph="..." />
-                <marker date="1560094959293" expanded="true" signature="3748:3749" ph="..." />
+                <marker date="1560717583570" expanded="true" signature="692:749" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actor_dataset_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="989">
+              <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1560723491410" expanded="true" signature="249:335" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="723:724" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="723:726" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="1070:1209" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="1333:1335" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="1829:1896" ph="..." />
+                <marker date="1560723491410" expanded="true" signature="1929:2046" ph="..." />
               </folding>
             </state>
           </provider>
@@ -154,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/text_to_sample.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -225,8 +240,9 @@
         <option value="$PROJECT_DIR$/data/labels_to_sample.csv" />
         <option value="$PROJECT_DIR$/data/text_to_sample.csv" />
         <option value="$PROJECT_DIR$/src/speech_recognizer.py" />
-        <option value="$PROJECT_DIR$/src/data_generator.py" />
         <option value="$PROJECT_DIR$/src/pima.csv" />
+        <option value="$PROJECT_DIR$/src/data_generator.py" />
+        <option value="$PROJECT_DIR$/src/actor_dataset_parser.py" />
       </list>
     </option>
   </component>
@@ -237,8 +253,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="316" />
-    <option name="width" value="1613" />
+    <option name="x" value="63" />
+    <option name="width" value="1864" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -271,13 +287,13 @@
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="joyful_recordings" type="462c0819:PsiDirectoryNode" />
+              <item name="Audio_Speech_Actors_01-24" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="urgent_recordings" type="462c0819:PsiDirectoryNode" />
+              <item name="joyful_recordings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -311,11 +327,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSV" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\docs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\data\angry_recordings" />
+      <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\docs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,14 +395,12 @@
     <option name="totallyTimeSpent" value="4688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="253" y="0" width="1290" height="870" extended-state="0" />
+    <frame x="51" y="0" width="1491" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21463415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20684835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.61329716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49939686" weight="0.3283582" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42605156" />
@@ -398,11 +413,13 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50060314" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.3292683" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.27272728" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,23 +447,8 @@
     <entry file="file://$PROJECT_DIR$/hello-world/src/app/app.component.ts" />
     <entry file="file://$PROJECT_DIR$/Tutorial/main.ts" />
     <entry file="file://$PROJECT_DIR$/Tutorial/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" selection-start-line="55" selection-end-line="56" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test" />
+    <entry file="file://$PROJECT_DIR$/src/recorder.py" />
     <entry file="file://$PROJECT_DIR$/src/garcon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -465,16 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <marker date="1560003717028" expanded="true" signature="72:75" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="677" selection-start-line="677" selection-end-line="677" />
         </state>
       </provider>
     </entry>
@@ -486,16 +478,47 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database.py">
+    <entry file="file://$PROJECT_DIR$/src/database.py" />
+    <entry file="file://$PROJECT_DIR$/data/joyful_recordings/joyful_rec_1.wav">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pima.csv" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="52020">
+          <caret line="3123" selection-start-line="3123" selection-end-line="3123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11713">
+          <caret line="766" selection-start-line="766" selection-end-line="766" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10778">
+          <caret line="677" selection-start-line="677" selection-end-line="677" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/speech_recognizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1560094959296" expanded="true" signature="384:387" ph="..." />
+            <marker date="1560094959296" expanded="true" signature="632:1196" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/preprocessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
+        <state relative-caret-position="663">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -504,45 +527,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="766" selection-start-line="766" selection-end-line="766" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/joyful_recordings/joyful_rec_1.wav">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="3123" selection-start-line="3123" selection-end-line="3123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/speech_recognizer.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/data/text_to_sample.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="119">
-          <caret line="76" column="75" selection-start-line="76" selection-start-column="75" selection-end-line="76" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560094959296" expanded="true" signature="384:387" ph="..." />
-            <marker date="1560094959296" expanded="true" signature="632:1196" ph="..." />
-            <marker date="1560094959296" expanded="true" signature="1954:2037" ph="..." />
-            <marker date="1560094959296" expanded="true" signature="2209:2350" ph="..." />
-          </folding>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/labels_to_sample.csv">
@@ -555,39 +547,40 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/text_to_sample.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pima.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="129" column="11" lean-forward="true" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+        <state relative-caret-position="394">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560094959293" expanded="true" signature="692:749" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="1086:1356" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="1667:1928" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="2554:2722" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="2947:2948" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="3436:3545" ph="..." />
-            <marker date="1560094959293" expanded="true" signature="3748:3749" ph="..." />
+            <marker date="1560717583570" expanded="true" signature="692:749" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actor_dataset_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1560723491410" expanded="true" signature="249:335" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="723:724" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="723:726" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="1070:1209" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="1333:1335" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="1829:1896" ph="..." />
+            <marker date="1560723491410" expanded="true" signature="1929:2046" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
