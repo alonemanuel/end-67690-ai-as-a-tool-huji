@@ -8,6 +8,7 @@ def main():
 	logic = LogicManager()
 	logic.prepare()
 	learner = logic.get_learner()
+
 	gui = GUI(learner)
 	gui.run()
 

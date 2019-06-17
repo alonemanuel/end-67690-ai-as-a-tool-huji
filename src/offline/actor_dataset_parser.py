@@ -53,24 +53,24 @@ class Repetition(Enum):
 class ActorDataParser:
 
 	def __init__(self):
-		self.__emotions_dict = self.__get_emotions_dict()
-		self.__intensity_dict = self.__get_intensity_dict()
-		self.__statement_dict = self.__get_statement_dict()
-		self.__repetition_dict = self.__get_repetition_dict()
-		self.__emotion_dirs_dict = self.__get_emotion_dirs_dict()
+		self._emotions_dict = self._get_emotions_dict()
+		self._intensity_dict = self._get_intensity_dict()
+		self._statement_dict = self._get_statement_dict()
+		self._repetition_dict = self._get_repetition_dict()
+		self._emotion_dirs_dict = self._get_emotion_dirs_dict()
 
-	def __get_emotion_dirs_dict(self):
+	def _get_emotion_dirs_dict(self):
 		dict = {}
-		for emotion in self.__emotions_dict.values():
+		for emotion in self._emotions_dict.values():
 			dir_name = os.path.join(EMOTIONS_DIR, emotion)
 			dict[emotion] = dir_name
 		return dict
 
-	def __open_emotion_dirs(self):
-		for dir_name in self.__emotion_dirs_dict.values():
+	def _open_emotion_dirs(self):
+		for dir_name in self._emotion_dirs_dict.values():
 			os.makedirs(dir_name, exist_ok=True)
 
-	def __get_emotions_dict(self):
+	def _get_emotions_dict(self):
 		dict = {}
 		dict['01'] = 'neutral'
 		dict['02'] = 'calm'
@@ -82,67 +82,67 @@ class ActorDataParser:
 		dict['08'] = 'surprised'
 		return dict
 
-	def __get_intensity_dict(self):
+	def _get_intensity_dict(self):
 		dict = {}
 		dict['01'] = 'normal'
 		dict['02'] = 'strong'
 		return dict
 
-	def __get_statement_dict(self):
+	def _get_statement_dict(self):
 		dict = {}
 		dict['01'] = 'kids'
 		dict['02'] = 'dogs'
 		return dict
 
-	def __get_repetition_dict(self):
+	def _get_repetition_dict(self):
 		dict = {}
 		dict['01'] = '0'
 		dict['02'] = '1'
 		return dict
 
-	def __get_file_emotion(self, fn):
+	def _get_file_emotion(self, fn):
 		print(fn)
 		m = re.findall(r'\d\d', fn)
 		emotion_code = m[EMOTION_GROUP]
-		return self.__emotions_dict[emotion_code]
+		return self._emotions_dict[emotion_code]
 
 	def parse(self):
-		self.__open_emotion_dirs()
+		self._open_emotion_dirs()
 
 		for actor_dir in os.listdir(ACTORS_DIR):
 			gc.log_var(actor_dir=actor_dir)
 			for fn in os.listdir(os.path.join(ACTORS_DIR, actor_dir)):
 				gc.log_var(fn=fn)
-				emotion = self.__get_file_emotion(fn)
-				decoded = self.__get_decoded_name(fn, actor_dir)
+				emotion = self._get_file_emotion(fn)
+				decoded = self._get_decoded_name(fn, actor_dir)
 				src = os.path.join(ACTORS_DIR, actor_dir, fn)
-				emotion_dir = self.__emotion_dirs_dict[emotion]
+				emotion_dir = self._emotion_dirs_dict[emotion]
 				dest = os.path.join(emotion_dir, decoded)
 				shutil.move(src, dest)
 
-	def __get_decoded_name(self, fn, actor_dir):
+	def _get_decoded_name(self, fn, actor_dir):
 		grouped = re.findall('\\d\\d', fn)
 
 		emotion = grouped[Grouping.EMOTION.value]
-		emotion = self.__emotions_dict[emotion]
-		gender = self.__get_gender(grouped[Grouping.ACTOR.value])
-		actor = self.__get_actor(actor_dir)
+		emotion = self._emotions_dict[emotion]
+		gender = self._get_gender(grouped[Grouping.ACTOR.value])
+		actor = self._get_actor(actor_dir)
 		repetition = grouped[Grouping.REPETITION.value]
-		repetition = self.__repetition_dict[repetition]
+		repetition = self._repetition_dict[repetition]
 		intensity = grouped[Grouping.INTENSITY.value]
-		intensity = self.__intensity_dict[intensity]
+		intensity = self._intensity_dict[intensity]
 		statement = grouped[Grouping.STATEMENT.value]
-		statement = self.__statement_dict[statement]
+		statement = self._statement_dict[statement]
 
 		segs = [emotion, intensity, statement, gender, actor, repetition]
 		return '_'.join(segs) + WAV_EXTN
 
-	def __get_gender(self, gender_encoding):
+	def _get_gender(self, gender_encoding):
 		digit_char = gender_encoding[-1]
 		digit = int(digit_char)
 		gender = 'm' if (digit % 2) else 'f'
 		return gender
 
-	def __get_actor(self, actor_dir):
+	def _get_actor(self, actor_dir):
 		grouped = re.findall('\\d\\d', actor_dir)
 		return 'act' + grouped[0]
