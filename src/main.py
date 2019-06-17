@@ -5,10 +5,12 @@ import src.garcon2 as gc
 def main():
 	gc.enter_func()
 
+	# Create manager and get predictor
 	logic = LogicManager()
 	logic.prepare()
-	learner = logic.get_learner()
+	learner = logic.get_predictor()
 
+	# Create GUI and run
 	gui = GUI(learner)
 	gui.run()
 

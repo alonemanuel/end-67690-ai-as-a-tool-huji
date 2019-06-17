@@ -22,16 +22,6 @@ class Garcon2:
 		elapsed_time = time.time() - self.start_time
 		self.log('Execution took {0:.2f} seconds.'.format(elapsed_time))
 
-	def log_var(self, **kwargs):
-		for name, val in kwargs.items():
-			self.log(f'{name} is {val}')
-
-	def log_shape(self, **kwargs):
-		for name, val in kwargs.items():
-			dim_str = 'length' if isinstance(val, list) else 'shape'
-			dim = len(val) if isinstance(val, list) else val.shape
-			self.log(f'{name}\'s {dim_str} is', dim)
-
 	def init_plt(self, title=''):
 		self.fig = plt.figure()
 		if not title:
@@ -78,3 +68,13 @@ def enter_func():
 	curr_frame = inspect.currentframe()
 	call_frame = inspect.getouterframes(curr_frame, 2)
 	log(f'In {call_frame[1][3]}')
+
+def log_var(self, **kwargs):
+	for name, val in kwargs.items():
+		self.log(f'{name} is {val}')
+
+def log_shape(self, **kwargs):
+	for name, val in kwargs.items():
+		dim_str = 'length' if isinstance(val, list) else 'shape'
+		dim = len(val) if isinstance(val, list) else val.shape
+		self.log(f'{name}\'s {dim_str} is', dim)
