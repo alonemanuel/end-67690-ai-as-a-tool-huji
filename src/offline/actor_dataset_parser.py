@@ -15,6 +15,9 @@ EMOTION_GROUP = 2
 gc = Garcon()
 
 class Grouping(Enum):
+	'''
+	Grouping for regex matching.
+	'''
 	MODALITY = 0
 	VOCAL = 1
 	EMOTION = 2
@@ -51,8 +54,14 @@ class Repetition(Enum):
 	SECOND = '02'
 
 class ActorDataParser:
+	'''
+	Parses and rearranges data in actor recordings directory.
+	'''
 
 	def __init__(self):
+		'''
+		Inits a parser instance.
+		'''
 		self._emotions_dict = self._get_emotions_dict()
 		self._intensity_dict = self._get_intensity_dict()
 		self._statement_dict = self._get_statement_dict()

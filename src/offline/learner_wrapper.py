@@ -1,5 +1,5 @@
 from sklearn.metrics import confusion_matrix, accuracy_score
-import src.garcon2 as gc
+import src.garcon as gc
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns

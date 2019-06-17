@@ -1,4 +1,4 @@
-import src.garcon2 as gc
+import src.garcon as gc
 
 
 class GUI:

@@ -1,7 +1,7 @@
 from src.offline.data_getter import DataGetter
 import numpy as np
-import src.garcon2 as gc
-from src.offline.model_explorer import ModelExplorer
+import src.garcon as gc
+from src.offline.model_selector import ModelSelector
 
 class LogicManager():
 	'''
@@ -18,7 +18,7 @@ class LogicManager():
 		self._X_test, self._y_test = None, None
 		self._init_train_test()
 		self._is_prepared = False
-		self._explorer = ModelExplorer(self._X_train, self._y_train)
+		self._selector = ModelSelector(self._X_train, self._y_train)
 
 	def prepare(self, verbose=True):
 		'''
@@ -36,11 +36,11 @@ class LogicManager():
 		'''
 		gc.enter_func()
 		# Model should be prepared before it can be used.
-		self._expect_is_prepared()
-		choden_model = self._choose_model()
+		self._expect_prepared()
+		chosen_model = self._choose_model()
 		X_all, y_all = self._get_all_data()
-		choden_model.fit(X_all, y_all)
-		return choden_model
+		chosen_model.fit(X_all, y_all)
+		return chosen_model
 
 	def _explore_models(self, report=False):
 		'''
@@ -48,7 +48,7 @@ class LogicManager():
 		:return:
 		'''
 		gc.enter_func()
-		self._explorer.explore(report=report)
+		self._selector.explore(report=report)
 
 	def _init_train_test(self):
 		'''
@@ -60,7 +60,12 @@ class LogicManager():
 		self._X_test, self._y_test = test
 
 	def _choose_model(self):
-		pass
+		'''
+		Chooses the best model and returns it.
+		'''
+		gc.enter_func()
+		model = self._selector.get_chosen_model()
+		return model
 
 	def _get_all_data(self):
 		'''
@@ -74,7 +79,7 @@ class LogicManager():
 		y_all = np.row_stack((self._y_train, self._y_test))
 		return X_all, y_all
 
-	def _expect_is_prepared(self):
+	def _expect_prepared(self):
 		'''
 		Expecting manager is already prepared. If not, an assertion exception
 		is raised.
