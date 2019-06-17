@@ -1,15 +1,22 @@
 import os
+
+import librosa
+import numpy as np
 import src.garcon as gc
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
+N_MFCCS = 40
+
+I = 40
+
 DATA_DIR_PATH = os.path.join('..', '..', 'data')
-EMOTIONS_DIR_PATH = os.path.join(DATA_DIR_PATH,'emotions')
+EMOTIONS_DIR_PATH = os.path.join(DATA_DIR_PATH, 'emotions')
 TRAIN_RATIO = 0.85
 
 class DataGetter:
 	'''
-
+	Gets the initial raw (train + test) data.
 	'''
 
 	def __init__(self, data_dir_path=DATA_DIR_PATH, train_ratio=TRAIN_RATIO):
@@ -17,7 +24,7 @@ class DataGetter:
 		self._train_ratio = train_ratio
 		self._X_raw, self._y_raw = self._get_all_data()
 
-	def _get_all_data(self):
+	def _get_all_data(self, n_mfcc=N_MFCCS):
 		'''
 		Returns raw data as found in data_path
 		:return:	type=tuple,	shape=2, where:
@@ -25,12 +32,17 @@ class DataGetter:
 			tuple[1] = y_raw:	type=np.array,	shape=(m,	)
 		'''
 		gc.enter_func()
-		raw_data = pd.DataFrame(columns=['']
-		for emotion_dir in os.listdir(self._data_path):
-			samples = []
+		X_raw, y_raw = [], []
+		for label, emotion_dir in enumerate(os.listdir(self._data_path)):
 			for recording in os.listdir(emotion_dir):
+				y, sr = self._get_raw_data_from_file(recording)
+				mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
+				meaned = np.mean(mfccs.T, axis=0)
+				X_raw.append(meaned)
+				y_raw.append(label)
+		return X_raw, y_raw
 
-				pass
+
 	def get_train_test(self):
 		'''
 		Returns train and test data.
@@ -43,7 +55,7 @@ class DataGetter:
 		gc.enter_func()
 		train = tes
 
-	def _get_raw__data_from_file(self, fn):
+	def _get_raw_data_from_file(self, fn):
 		'''
 		Returns raw data from audio file.
 		:param fn: filename for .wav file
