@@ -12,23 +12,23 @@ I = 40
 
 DATA_DIR_PATH = os.path.join('..', '..', 'data')
 EMOTIONS_DIR_PATH = os.path.join(DATA_DIR_PATH, 'emotions')
-TRAIN_RATIO = 0.85
+TEST_RATIO = 0.15
 
 class DataGetter:
 	'''
 	Gets the initial raw (train + test) data.
 	'''
 
-	def __init__(self, data_dir_path=DATA_DIR_PATH, train_ratio=TRAIN_RATIO):
+	def __init__(self, data_dir_path=DATA_DIR_PATH, test_ratio=TEST_RATIO):
 		self._data_path = data_dir_path
-		self._train_ratio = train_ratio
+		self._test_ratio = test_ratio
 		self._X_raw, self._y_raw = self._get_all_data()
 
 	def _get_all_data(self, n_mfcc=N_MFCCS):
 		'''
 		Returns raw data as found in data_path
 		:return:	type=tuple,	shape=2, where:
-			tuple[0] = X_raw:	type=np.array,	shape=(m,	d)
+			tuple[0] = X_raw:	type=np.array,	shape=(m,	n_mfcc)
 			tuple[1] = y_raw:	type=np.array,	shape=(m,	)
 		'''
 		gc.enter_func()
@@ -40,8 +40,7 @@ class DataGetter:
 				meaned = np.mean(mfccs.T, axis=0)
 				X_raw.append(meaned)
 				y_raw.append(label)
-		return X_raw, y_raw
-
+		return np.array(X_raw), np.array(y_raw)
 
 	def get_train_test(self):
 		'''
@@ -53,7 +52,11 @@ class DataGetter:
 			tuple[1][1] = y_test:	type=np.array,	shape=(m,	)
 		'''
 		gc.enter_func()
-		train = tes
+		X_train, X_test, y_train, y_test = train_test_split(self._X_raw,
+															self._y_raw,
+															test_size=TEST_RATIO,
+															random_state=73)
+		return X_train, y_train, X_test, y_test
 
 	def _get_raw_data_from_file(self, fn):
 		'''
