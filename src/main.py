@@ -1,16 +1,15 @@
-from src.data_generator import TrainDataGenerator
-from src.garcon import Garcon
-from src.speech_recognizer import SpeechRecognizer
-from src.actor_dataset_parser import ActorDataParser
-
-gc = Garcon()
+from src.offline.logic_manager import LogicManager
+from src.online.gui import GUI
+import src.garcon2 as gc
 
 def main():
 	gc.enter_func()
-	# generator = TrainDataGenerator()
-	# generator.generate_predefined_data()
-	# parser = ActorDataParser()
-	# parser.parse()
+
+	logic = LogicManager()
+	logic.prepare()
+	learner = logic.get_learner()
+	gui = GUI(learner)
+	gui.run()
 
 if __name__ == '__main__':
 	main()
