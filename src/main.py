@@ -1,15 +1,16 @@
+from src.data_generator import TrainDataGenerator
 from src.garcon import Garcon
 from src.speech_recognizer import SpeechRecognizer
+from src.actor_dataset_parser import ActorDataParser
 
 gc = Garcon()
 
 def main():
 	gc.enter_func()
-	recognizer = SpeechRecognizer()
-	text1 = recognizer.record_and_parse()
-	text2 = recognizer.record_and_parse()
-	gc.log('TEXT1: ', text1)
-	gc.log('TEXT2: ', text2)
+	# generator = TrainDataGenerator()
+	# generator.generate_predefined_data()
+	# parser = ActorDataParser()
+	# parser.parse()
 
 if __name__ == '__main__':
 	main()
