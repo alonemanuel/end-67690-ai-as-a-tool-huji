@@ -9,8 +9,8 @@ def main():
 	gc.enter_func()
 	# generator = TrainDataGenerator()
 	# generator.generate_predefined_data()
-	parser = ActorDataParser()
-	parser.parse()
+	# parser = ActorDataParser()
+	# parser.parse()
 
 if __name__ == '__main__':
 	main()
