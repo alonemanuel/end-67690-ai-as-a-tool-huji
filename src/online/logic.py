@@ -3,7 +3,7 @@ import numpy as np
 import src.garcon as gc
 from src.offline.model_selector import ModelSelector
 
-class LogicManager():
+class Logic():
 	'''
 	Manages the logic behind the prosody-mate system.
 	'''
@@ -20,7 +20,7 @@ class LogicManager():
 		self._is_prepared = False
 		self._selector = ModelSelector(self._X_train, self._y_train)
 
-	def prepare(self, verbose=True):
+	def init(self, verbose=True):
 		'''
 		Prepares the ground for the learning task.
 		:param verbose:	Should this process be verbose or not?
@@ -28,6 +28,9 @@ class LogicManager():
 		gc.enter_func()
 		self._explore_models(report=verbose)
 		self._is_prepared = True
+
+	def predict(self, record_fn):
+		pass
 
 	def get_predictor(self):
 		'''
@@ -55,9 +58,8 @@ class LogicManager():
 		Inits (=sets) the train and test data sets.
 		'''
 		gc.enter_func()
-		train, test = self._data_getter.get_train_test()
-		self._X_train, self._y_train = train
-		self._X_test, self._y_test = test
+		self._X_train, self._y_train, self._X_test, self._y_test = \
+			self._data_getter.get_train_test()
 
 	def _choose_model(self):
 		'''

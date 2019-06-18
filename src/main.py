@@ -1,18 +1,13 @@
-from src.offline.logic_manager import LogicManager
+from src.online.logic import Logic
 from src.online.gui import GUI
 import src.garcon as gc
+from src.online.manager import Manager
 
 def main():
 	gc.enter_func()
 
-	# Create manager and get predictor
-	logic = LogicManager()
-	logic.prepare()
-	learner = logic.get_predictor()
-
-	# Create GUI and run
-	gui = GUI(learner)
-	gui.run()
+	manager = Manager()
+	manager.run()
 
 if __name__ == '__main__':
 	main()
