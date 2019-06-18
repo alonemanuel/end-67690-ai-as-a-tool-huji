@@ -1,3 +1,4 @@
+import numpy as np
 from sklearn.model_selection import cross_val_score
 
 import src.other.garcon as gc
@@ -13,11 +14,18 @@ class ModelSelector():
 		Inits a model selector.
 		'''
 		self._X_train, self._y_train = None, None
+		self._preprocessor = None
 		self._models = {}
 		self._scores = {}
 
-	def init(self, X_train, y_train):
+	def init(self, proprocessor, X_train, y_train):
+		'''
+		:param proprocessor:	implementing 'preprocess' method.
+		:param X_train:	type=list>filename,	shape=(m,	)
+		:param y_train:	type=list>label,	shape=(m,	)
+		'''
 		gc.enter_func()
+		self._preprocessor = proprocessor
 		self._init_data(X_train, y_train)
 		self._init_models()
 
@@ -31,7 +39,13 @@ class ModelSelector():
 		gc.enter_func()
 
 	def _init_data(self, X_train, y_train):
-		self._X_train, self._y_train = X_train, y_train
+		'''
+		:param X_train:	type=list>filename,	shape=(m,	)
+		:param y_train:	type=list>label,	shape=(m,	)
+		'''
+		X_prep = self._preprocessor.preprocess(X_train)
+		y_prep = np.array(y_train)
+		self._X_train, self._y_train = X_prep, y_prep
 
 	def _init_models(self):
 		for model in Models:

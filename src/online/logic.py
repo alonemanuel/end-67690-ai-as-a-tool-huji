@@ -31,8 +31,9 @@ class Logic():
 		gc.enter_func()
 		self._data_getter.init()
 		self._init_data()
-		self._preprocessor.init()
-		self._model_selector.init(self._X_train, self._y_train)
+		self._preprocessor.init(self._X_train, self._y_train)
+		self._model_selector.init(self._preprocessor, self._X_train,
+								  self._y_train)
 		self._init_model()
 
 	def predict(self, record_fn):
