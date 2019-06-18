@@ -1,6 +1,4 @@
-from src.online.logic import Logic
-from src.online.gui import GUI
-import src.garcon as gc
+import src.other.garcon as gc
 from src.online.manager import Manager
 
 def main():

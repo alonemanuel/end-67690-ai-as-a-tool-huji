@@ -1,16 +1,32 @@
-import src.garcon as gc
-import numpy as np
-import scipy.io.wavfile as wave
 import librosa
+import numpy as np
+
+import src.other.constants as const
+import src.other.garcon as gc
 
 class Preprocessor():
 	def __init__(self, X_train, y_train):
+		'''
+		Inits a preprocessor.
+		:param X_train: type=list>string,	shape=(m,	)
+		:param y_train: type=list>scalar,	shape=(m,	)
+		'''
 		self._X_train, self._y_train = X_train, y_train
+
+	def init(self):
+		gc.enter_func()
 		pass
 
-	def preprocess(self):
+	def preprocess(self, filename):
+		'''
+		Preprocesses a .wav filename.
+		:param filename: 	.wav filename.
+		:return: 	type=np.array,	shape=(d,	)
+		'''
 		gc.enter_func()
-		self._X_train = self._normalize(self._X_train)
+		y, sr = librosa.load(filename)
+		mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=const.N_MFCCS)
+		return mfcc
 
 	def _normalize(self, X):
 		'''
@@ -30,4 +46,3 @@ class Preprocessor():
 		:return:	type=np.array,	shape=(d,	)
 		'''
 		waveform, _ = librosa.load(fn)
-		

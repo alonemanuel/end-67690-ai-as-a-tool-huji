@@ -1,4 +1,4 @@
-import src.garcon as gc
+import src.other.garcon as gc
 
 class GUI:
 	def __init__(self):

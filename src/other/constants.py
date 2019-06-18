@@ -1,3 +1,4 @@
+import os
 from enum import Enum
 
 from sklearn import svm
@@ -22,3 +23,13 @@ class Models(Enum):
 
 	def get_class(self):
 		return self.value[MODEL_CLASS]
+
+
+# Directories #
+DATA_DIR = os.path.join( '..', 'data')
+EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
+
+# Learning #
+TEST_RATIO = 0.15
+N_MFCCS = 40
+

@@ -1,7 +1,9 @@
-from src.offline.data_getter import DataGetter
 import numpy as np
-import src.garcon as gc
+
+import src.other.garcon as gc
+from src.offline.data_getter import DataGetter
 from src.offline.model_selector import ModelSelector
+from src.offline.preprocessor import Preprocessor
 
 class Logic():
 	'''
@@ -14,6 +16,7 @@ class Logic():
 		'''
 		self._data_getter = DataGetter()
 		self._model_selector = ModelSelector()
+		self._preprocessor = Preprocessor()
 
 		self._X_train, self._y_train = None, None
 		self._X_test, self._y_test = None, None
@@ -28,10 +31,17 @@ class Logic():
 		gc.enter_func()
 		self._data_getter.init()
 		self._init_data()
+		self._preprocessor.init()
 		self._model_selector.init(self._X_train, self._y_train)
 		self._init_model()
 
 	def predict(self, record_fn):
+		'''
+
+		:param record_fn:
+		:return:
+		'''
+		features = self._preprocessor.preprocess()
 		prediction = self._chosen_model.predict(record_fn)
 		return prediction
 

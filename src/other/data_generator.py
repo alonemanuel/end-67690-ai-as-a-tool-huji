@@ -3,8 +3,8 @@ import time
 
 import pandas as pd
 
-from src.garcon import Garcon
-from src.speech_recognizer import SpeechRecognizer
+from src.other.garcon import Garcon
+from src.other.speech_recognizer import SpeechRecognizer
 
 LABELS_NON_INT_ERR = 'Error: Labels must be integers'
 

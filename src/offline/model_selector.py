@@ -1,7 +1,7 @@
 from sklearn.model_selection import cross_val_score
 
-import src.garcon as gc
-from src.constants import Models
+import src.other.garcon as gc
+from src.other.constants import Models
 
 class ModelSelector():
 	'''

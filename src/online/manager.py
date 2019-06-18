@@ -1,6 +1,6 @@
 from src.online.gui import GUI
 from src.online.logic import Logic
-import src.garcon as gc
+import src.other.garcon as gc
 
 class Manager():
 	def __init__(self):

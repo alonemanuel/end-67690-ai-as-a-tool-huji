@@ -3,7 +3,7 @@ from enum import Enum
 import re
 import shutil
 
-from src.garcon import Garcon
+from src.other.garcon import Garcon
 
 WAV_EXTN = '.wav'
 

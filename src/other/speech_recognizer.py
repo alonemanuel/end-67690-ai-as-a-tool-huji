@@ -3,7 +3,7 @@ import time
 
 import speech_recognition as sr
 
-from src.garcon import Garcon
+from src.other.garcon import Garcon
 
 MAX_REC_LENGTH = 7
 
