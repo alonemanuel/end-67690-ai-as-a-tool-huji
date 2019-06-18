@@ -1,13 +1,7 @@
-from sklearn import svm
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
-from sklearn.neighbors import NearestNeighbors
 
 import src.garcon as gc
-import sklearn.linear_model as sk
-
-from src.constants import Models as lm, Models
+from src.constants import Models
 
 class ModelSelector():
 	'''
@@ -20,6 +14,7 @@ class ModelSelector():
 		'''
 		self._X_train, self._y_train = None, None
 		self._models = {}
+		self._scores = {}
 
 	def init(self, X_train, y_train):
 		gc.enter_func()
@@ -27,10 +22,13 @@ class ModelSelector():
 		self._init_models()
 
 	def choose_model(self):
+		gc.enter_func()
 		self._cross_validate_models()
+		best_model = max(self._scores, key=self._scores.get)
+		return (best_model.get_class())()
 
 	def report(self, model, X_test, y_test):
-		pass
+		gc.enter_func()
 
 	def _init_data(self, X_train, y_train):
 		self._X_train, self._y_train = X_train, y_train
@@ -44,12 +42,9 @@ class ModelSelector():
 		for model_enum, model in self._models.items():
 			accuracy = cross_val_score(model, self._X_train, self._y_train,
 									   scoring='accuracy', cv=5).mean() * 100
+			self._scores[model_enum] = accuracy
 			print(f'Accuracy of {model_enum.get_name()} is {accuracy}')
-
 
 	def _get_models(self):
 		gc.enter_func()
 		models = {}
-
-	def choose_model(self):
-		gc.enter_func()

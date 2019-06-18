@@ -7,6 +7,7 @@ def main():
 	gc.enter_func()
 
 	manager = Manager()
+	manager.init()
 	manager.run()
 
 if __name__ == '__main__':

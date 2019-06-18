@@ -1,5 +1,4 @@
 import librosa
-import librosa as lr
 
 class Preprocessor:
 	def __init__(self, raw_x, raw_y):
@@ -38,6 +37,3 @@ class Preprocessor:
 		# Compute chroma features from the harmonic signal
 		chromagram = librosa.feature.chroma_cqt(y=y_harmonic,
 												sr=sr)
-
-
-
