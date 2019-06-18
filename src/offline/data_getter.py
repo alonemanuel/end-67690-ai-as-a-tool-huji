@@ -24,6 +24,9 @@ class DataGetter:
 		self._test_ratio = test_ratio
 		self._X_raw, self._y_raw = self._get_all_data()
 
+	def init(self):
+		pass
+
 	def _get_all_data(self, n_mfcc=N_MFCCS):
 		'''
 		Returns raw data as found in data_path
