@@ -1,5 +1,6 @@
 import time
 import inspect
+import ntpath
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -67,7 +68,9 @@ def log(*args):
 def enter_func():
 	curr_frame = inspect.currentframe()
 	call_frame = inspect.getouterframes(curr_frame, 2)
-	log(f'In {call_frame[1][3]}')
+	file_name = ntpath.basename(call_frame[1][1])
+	function_name = call_frame[1][3]
+	log(f'In {function_name} (in {file_name})')
 
 def log_var(self, **kwargs):
 	for name, val in kwargs.items():

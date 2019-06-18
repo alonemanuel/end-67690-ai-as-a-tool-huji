@@ -22,10 +22,10 @@ class DataGetter:
 	def __init__(self, data_dir_path=DATA_DIR_PATH, test_ratio=TEST_RATIO):
 		self._data_path = data_dir_path
 		self._test_ratio = test_ratio
-		self._X_raw, self._y_raw = self._get_all_data()
+		self._X_all, self._y_all = None, None
 
 	def init(self):
-		pass
+		self._X_raw, self._y_raw = self._get_all_data()
 
 	def _get_all_data(self, n_mfcc=N_MFCCS):
 		'''
