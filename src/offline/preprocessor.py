@@ -32,7 +32,8 @@ class Preprocessor():
 		for fn in tqdm(filenames):
 			wave = wavio.read(fn)
 			sr, y  = wave.rate, wave.data.ravel().astype(float)
-			mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=const.N_MFCCS)
+			mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr,
+												n_mfcc=const.N_MFCCS).T, axis=0)
 			mfccs.append(mfcc)
 		return np.array(mfccs)
 

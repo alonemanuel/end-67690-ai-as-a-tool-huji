@@ -4,12 +4,12 @@ from enum import Enum
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import NearestNeighbors
+from sklearn.neighbors import KNeighborsClassifier
 
 MODEL_NAME, MODEL_CLASS = 0, 1
 
 class Models(Enum):
-	KNN = 'k-Nearest Neighbors', NearestNeighbors
+	KNN = 'k-Nearest Neighbors', KNeighborsClassifier
 	LOG_REG = 'Logistic Regression', LogisticRegression
 	SVM = 'Suport Vector Machines', svm.SVC
 	RF = 'Random Forest', RandomForestClassifier
@@ -30,6 +30,7 @@ DATA_DIR = os.path.join( '..', 'data')
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 
 # Learning #
-TEST_RATIO = 0.15
+# TEST_RATIO = 0.15
+TEST_RATIO = 0.95
 N_MFCCS = 40
 
