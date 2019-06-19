@@ -13,6 +13,10 @@ class Logic():
 	def __init__(self):
 		'''
 		Inits a logic manager.
+		:var _X_train: 	type=list>filenames,	shape=(m_train,	)
+		:var _y_train: 	type=list>labels,		shape=(m_train,	)
+		:var _X_train: 	type=list>filenames,	shape=(m_test,	)
+		:var _X_train: 	type=list>filenames,	shape=(m_train,	)
 		'''
 		self._data_getter = DataGetter()
 		self._model_selector = ModelSelector()
@@ -52,8 +56,10 @@ class Logic():
 
 	def _init_model(self):
 		self._chosen_model = self._model_selector.choose_model()
+		X_all = self._X_train + self._X_test
+		y_all = self._y_train + self._y_test
+		# X_all = np.row_stack((self._X_train, self._X_test))
+		# y_all = np.row_stack((self._y_train, self._y_test))
+		self._chosen_model.fit(X_all, y_all)
 		self._model_selector.report(self._chosen_model, self._X_test,
 									self._y_test)
-		X_all = np.row_stack((self._X_train, self._X_test))
-		y_all = np.row_stack((self._y_train, self._y_test))
-		self._chosen_model.fit(X_all, y_all)

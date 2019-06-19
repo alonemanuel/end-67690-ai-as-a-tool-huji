@@ -1,10 +1,11 @@
 import inspect
 import ntpath
+import os
 import time
 
 import matplotlib.pyplot as plt
 
-IMDIR = 'images/'
+IMDIR = os.path.join('..', 'images')
 
 class Garcon2:
 	first_gc = None
@@ -23,14 +24,6 @@ class Garcon2:
 		elapsed_time = time.time() - self.start_time
 		self.log('Execution took {0:.2f} seconds.'.format(elapsed_time))
 
-	def init_plt(self, title=''):
-		self.fig = plt.figure()
-		if not title:
-			curr_frame = inspect.currentframe()
-			call_frame = inspect.getouterframes(curr_frame, 2)
-			title = call_frame[1][3]
-		plt.title(title)
-
 	def iter(self, iterable=None):
 		if iterable is not None:
 			self.iter_step = (int)(0.1 * len(iterable))
@@ -47,17 +40,25 @@ class Garcon2:
 		plt.subplot()
 		plt.title(title)
 
-	def save_plt(self, fn=''):
-		if not fn:
-			curr_frame = inspect.currentframe()
-			call_frame = inspect.getouterframes(curr_frame, 2)
-			fn = call_frame[1][3]
-		plt.tight_layout()
-		plt.savefig(IMDIR + fn)
-
 	def __del__(self):
 		if Garcon2.first_gc is self:
 			self.show_time()
+
+def init_plt(title=''):
+	fig = plt.figure()
+	if not title:
+		curr_frame = inspect.currentframe()
+		call_frame = inspect.getouterframes(curr_frame, 2)
+		title = call_frame[1][3]
+	plt.title(title)
+
+def save_plt(fn=''):
+	if not fn:
+		curr_frame = inspect.currentframe()
+		call_frame = inspect.getouterframes(curr_frame, 2)
+		fn = call_frame[1][3]
+	plt.tight_layout()
+	plt.savefig(os.path.join(IMDIR, fn))
 
 def log(*args):
 	print('Log:', end=' ')

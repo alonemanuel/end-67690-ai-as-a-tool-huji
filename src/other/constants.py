@@ -3,7 +3,7 @@ from enum import Enum
 
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LogisticRegression, Lasso, ElasticNet
 from sklearn.neighbors import KNeighborsClassifier
 
 MODEL_NAME, MODEL_CLASS = 0, 1
@@ -13,6 +13,8 @@ class Models(Enum):
 	LOG_REG = 'Logistic Regression', LogisticRegression
 	SVM = 'Suport Vector Machines', svm.SVC
 	RF = 'Random Forest', RandomForestClassifier
+	LASSO = 'Lasso', Lasso
+	ELASTIC = 'Elastic net', ElasticNet
 
 	@staticmethod
 	def list():
@@ -31,6 +33,9 @@ EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 
 # Learning #
 # TEST_RATIO = 0.15
-TEST_RATIO = 0.95
+TEST_RATIO = 0.15
 N_MFCCS = 40
+
+
+# GUI #
 
