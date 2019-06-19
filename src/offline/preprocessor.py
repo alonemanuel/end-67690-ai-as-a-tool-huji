@@ -1,5 +1,8 @@
+import random
+
 import librosa
 import numpy as np
+import wavio
 from tqdm import tqdm
 import scipy.io.wavfile as wav
 import src.other.constants as const
@@ -27,14 +30,10 @@ class Preprocessor():
 		gc.enter_func()
 		mfccs = []
 		for fn in tqdm(filenames):
-			try:
-				sr, y = wav.read(fn)
-			except:
-				print(fn)
-				# y, sr = librosa.load(fn)
-			else:
-				mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=const.N_MFCCS)
-				mfccs.append(mfcc)
+			wave = wavio.read(fn)
+			sr, y  = wave.rate, wave.data.ravel().astype(float)
+			mfcc = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=const.N_MFCCS)
+			mfccs.append(mfcc)
 		return np.array(mfccs)
 
 	def _normalize(self, X):

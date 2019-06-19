@@ -1,18 +1,18 @@
 import os
-from enum import Enum
 import re
 import shutil
+from enum import Enum
 
-from src.other.garcon import Garcon
+import src.other.garcon as gc
 
 WAV_EXTN = '.wav'
 
 DATA_DIR = os.path.join('..', 'data')
-ACTORS_DIR = os.path.join(DATA_DIR, 'Audio_Speech_Actors_01-24')
+# ACTORS_DIR = os.path.join(DATA_DIR, 'Audio_Speech_Actors_01-24')
+SPEECH_DIR = "E:\\alon_emanuel_drive\Downloads\Audio_Speech_Actors_01-24"
+SONG_DIR = "E:\\alon_emanuel_drive\Downloads\Audio_Song_Actors_01-24"
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 EMOTION_GROUP = 2
-
-gc = Garcon()
 
 class Grouping(Enum):
 	'''
@@ -68,6 +68,23 @@ class ActorDataParser:
 		self._repetition_dict = self._get_repetition_dict()
 		self._emotion_dirs_dict = self._get_emotion_dirs_dict()
 
+	def parse(self):
+		self._parse_specific(song=False)
+		self._parse_specific(song=True)
+
+	def _parse_specific(self, song=False):
+		self._open_emotion_dirs()
+		recordings_dir = SONG_DIR if song else SPEECH_DIR
+		for actor_dir in os.listdir(recordings_dir):
+			gc.log_var(actor_dir=actor_dir)
+			for fn in os.listdir(os.path.join(recordings_dir, actor_dir)):
+				# gc.log_var(fn=fn)
+				emotion = self._get_file_emotion(fn)
+				decoded = self._get_decoded_name(fn, actor_dir, song)
+				src = os.path.join(recordings_dir, actor_dir, fn)
+				emotion_dir = self._emotion_dirs_dict[emotion]
+				dest = os.path.join(emotion_dir, decoded)
+				shutil.move(src, dest)
 	def _get_emotion_dirs_dict(self):
 		dict = {}
 		for emotion in self._emotions_dict.values():
@@ -115,27 +132,15 @@ class ActorDataParser:
 		emotion_code = m[EMOTION_GROUP]
 		return self._emotions_dict[emotion_code]
 
-	def parse(self):
-		self._open_emotion_dirs()
 
-		for actor_dir in os.listdir(ACTORS_DIR):
-			gc.log_var(actor_dir=actor_dir)
-			for fn in os.listdir(os.path.join(ACTORS_DIR, actor_dir)):
-				gc.log_var(fn=fn)
-				emotion = self._get_file_emotion(fn)
-				decoded = self._get_decoded_name(fn, actor_dir)
-				src = os.path.join(ACTORS_DIR, actor_dir, fn)
-				emotion_dir = self._emotion_dirs_dict[emotion]
-				dest = os.path.join(emotion_dir, decoded)
-				shutil.move(src, dest)
-
-	def _get_decoded_name(self, fn, actor_dir):
+	def _get_decoded_name(self, fn, actor_dir, is_song):
 		grouped = re.findall('\\d\\d', fn)
 
 		emotion = grouped[Grouping.EMOTION.value]
 		emotion = self._emotions_dict[emotion]
-		gender = self._get_gender(grouped[Grouping.ACTOR.value])
 		actor = self._get_actor(actor_dir)
+		gender = self._get_gender(grouped[Grouping.ACTOR.value])
+		audio_type = 'song' if is_song else 'speech'
 		repetition = grouped[Grouping.REPETITION.value]
 		repetition = self._repetition_dict[repetition]
 		intensity = grouped[Grouping.INTENSITY.value]
@@ -143,7 +148,8 @@ class ActorDataParser:
 		statement = grouped[Grouping.STATEMENT.value]
 		statement = self._statement_dict[statement]
 
-		segs = [emotion, intensity, statement, gender, actor, repetition]
+		segs = [emotion, audio_type, intensity, statement, actor, gender,
+				repetition]
 		return '_'.join(segs) + WAV_EXTN
 
 	def _get_gender(self, gender_encoding):

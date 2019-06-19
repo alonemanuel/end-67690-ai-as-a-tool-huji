@@ -53,11 +53,11 @@ class ModelSelector():
 
 	def _cross_validate_models(self):
 		gc.enter_func()
-		for model_enum, model in self._models.items():
-			accuracy = cross_val_score(model, self._X_train, self._y_train,
-									   scoring='accuracy', cv=5).mean() * 100
-			self._scores[model_enum] = accuracy
-			print(f'Accuracy of {model_enum.get_name()} is {accuracy}')
+		# for model_enum, model in self._models.items():
+		# 	accuracy = cross_val_score(model, self._X_train, self._y_train,
+		# 							   scoring='accuracy', cv=5).mean() * 100
+		# 	self._scores[model_enum] = accuracy
+		# 	print(f'Accuracy of {model_enum.get_name()} is {accuracy}')
 
 	def _get_models(self):
 		gc.enter_func()

@@ -1,7 +1,7 @@
-import time
 import inspect
 import ntpath
-import numpy as np
+import time
+
 import matplotlib.pyplot as plt
 
 IMDIR = 'images/'
@@ -72,12 +72,12 @@ def enter_func():
 	function_name = call_frame[1][3]
 	log(f'In {function_name} (in {file_name})')
 
-def log_var(self, **kwargs):
+def log_var(**kwargs):
 	for name, val in kwargs.items():
-		self.log(f'{name} is {val}')
+		log(f'{name} is {val}')
 
-def log_shape(self, **kwargs):
+def log_shape(**kwargs):
 	for name, val in kwargs.items():
 		dim_str = 'length' if isinstance(val, list) else 'shape'
 		dim = len(val) if isinstance(val, list) else val.shape
-		self.log(f'{name}\'s {dim_str} is', dim)
+		log(f'{name}\'s {dim_str} is', dim)
