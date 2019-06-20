@@ -5,7 +5,7 @@ import time
 
 import matplotlib.pyplot as plt
 
-IMDIR = os.path.join('..', 'images')
+IMDIR = os.path.join('..', '..','images')
 
 class Garcon2:
 	first_gc = None

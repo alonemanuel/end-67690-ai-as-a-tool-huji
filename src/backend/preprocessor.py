@@ -1,10 +1,8 @@
-import random
-
 import librosa
 import numpy as np
 import wavio
 from tqdm import tqdm
-import scipy.io.wavfile as wav
+
 import src.other.constants as const
 import src.other.garcon as gc
 
@@ -28,14 +26,25 @@ class Preprocessor():
 		:return: 	type=np.array,	shape=(m,	d)
 		'''
 		gc.enter_func()
+		gc.log(f'filenames = {filenames}')
 		mfccs = []
-		for fn in tqdm(filenames):
-			wave = wavio.read(fn)
-			sr, y  = wave.rate, wave.data.ravel().astype(float)
+		if type(filenames) == list:
+			for fn in tqdm(filenames):
+				wave = wavio.read(fn)
+				sr, y = wave.rate, wave.data.ravel().astype(float)
+				mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr,
+													n_mfcc=const.N_MFCCS).T,
+							   axis=0)
+				mfccs.append(mfcc)
+			numpied = np.array(mfccs)
+		else:
+			wave = wavio.read(filenames)
+			sr, y = wave.rate, wave.data.ravel().astype(float)
 			mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr,
-												n_mfcc=const.N_MFCCS).T, axis=0)
-			mfccs.append(mfcc)
-		return np.array(mfccs)
+												n_mfcc=const.N_MFCCS).T,
+						   axis=0)
+			numpied = np.array([mfcc])
+		return self._normalize(numpied)
 
 	def _normalize(self, X):
 		'''
@@ -46,4 +55,4 @@ class Preprocessor():
 		gc.enter_func()
 		mean = np.mean(X, axis=0)
 		std = np.std(X, axis=0)
-		return (X - mean) / std
+		return (X - mean) / (std + 1 ** -6)
