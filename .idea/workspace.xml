@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KNN_testset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOG_REG_testset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/RF_testset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/SVM_testset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/actor_dataset_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/actor_dataset_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/data_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_getter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/learner_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/learner_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/model_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/model_selector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/offline/preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/online/logic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/garcon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/garcon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/preprocessor.py" beforeDir="false" />
-    </list>
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -62,7 +44,7 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="labels_to_sample" value="1" />
-          <entry key="png" value="23" />
+          <entry key="png" value="25" />
           <entry key="py" value="104" />
           <entry key="test" value="1" />
           <entry key="txt" value="2" />
@@ -73,7 +55,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="6" />
-          <entry key="Image" value="23" />
+          <entry key="Image" value="25" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="104" />
         </counts>
@@ -145,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="209">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
@@ -191,32 +173,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/speech_recognizer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1560958951984" expanded="true" signature="390:393" ph="..." />
-                <marker date="1560958951984" expanded="true" signature="638:1202" ph="..." />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_testset.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/recorder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1560997711452" expanded="true" signature="315:316" ph="..." />
-                <marker date="1560997711452" expanded="true" signature="360:396" ph="..." />
-                <marker date="1560997711452" expanded="true" signature="892:979" ph="..." />
-              </folding>
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -529,12 +492,12 @@
     <frame x="196" y="0" width="1346" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27527216" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27527216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.32428765" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2523745" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2523745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -853,12 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://C:/Program Files/Python37/Lib/wave.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -941,6 +898,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/other/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -953,16 +921,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_testset.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
