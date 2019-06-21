@@ -358,7 +358,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="157" />
+    <option name="x" value="522" />
     <option name="width" value="1348" />
     <option name="height" value="872" />
   </component>
@@ -433,7 +433,7 @@
     <property name="SearchEverywhereHistoryKey" value="kagjfl&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../67577_IML/Exercises/Ex6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
@@ -538,6 +538,8 @@
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.bucky" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.bucky" />
       </list>
     </recent_temporary>
   </component>
