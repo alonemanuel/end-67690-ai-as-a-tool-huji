@@ -7,20 +7,21 @@ class Manager():
 	def __init__(self):
 		Recorder.check_is_dir('..\\..\\recordings')
 
+		self._gui = GUI()
 		self._logic = Logic()
 		self._recorder = Recorder()
-		self._gui = GUI()
 
 	def init(self):
 		gc.enter_func()
-		self._logic.init()
-		self._recorder.init()
-
 		self._gui.init()
+		# self._logic.init()
+		# self._recorder.init()
+
 
 	def run(self):
 		gc.enter_func()
-		self._record_loop()
+		self._gui.run()
+		# self._record_loop()
 
 	# self._gui.run()
 	# while not self._gui.should_exit():
