@@ -1,11 +1,12 @@
 import os
+import shutil
 import time
 
 import speech_recognition as sr
 
 import src.other.garcon as gc
 
-MAX_REC_LENGTH = 7
+MAX_REC_LENGTH = 10
 
 DEF_TXT_PROMPT = ''
 
@@ -16,6 +17,7 @@ DEF_PRE_PROMPT = 'Say something...'
 DEF_COUNT_DOWN = 3
 
 RECORDING_DIR = os.path.join('..', '..', 'recordings')
+EMOTIONS_DIR = os.path.join('..', '..', 'data', 'emotions2')
 WAVE_FN_EXT = '.wav'
 
 class Recorder():
@@ -27,29 +29,43 @@ class Recorder():
 	def __init__(self):
 		self._r = None
 		self._record_idx = 0
+		self._init_emotion_dirs()
+
+	def _init_emotion_dirs(self):
+		self._emotion_dirs = {}
+		self._emotion_dirs[0] = os.path.join(EMOTIONS_DIR, '0_happy')
+		self._emotion_dirs[1] = os.path.join(EMOTIONS_DIR, '1_surprised')
+		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '2_sad')
+		self._emotion_dirs[3] = os.path.join(EMOTIONS_DIR, '3_angry')
 
 	def init(self):
 		gc.enter_func()
 		self._r = sr.Recognizer()
 
-	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT):
+	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT,
+			   shell_verbose=True):
 		gc.enter_func()
 		fn = self._get_fn()
-		audio_source = self._record_mic(pre_prompt, post_prompt)
+		audio_source = self._record_mic(pre_prompt, post_prompt, shell_verbose)
 		self._save_wav(audio_source, fn)
 		time.sleep(1)
 		return fn
 
+	def labelize_rec(self, rec_fn, label):
+		dest = os.path.join(self._emotion_dirs[label], os.path.basename(
+				rec_fn))
+		shutil.copy(rec_fn, dest, follow_symlinks=True)
+
 	def _get_fn(self):
 		dtime = time.localtime()
-		base = []
-		for i in range(6):
+		base = ['rec']
+		for i in range(1, 6):
 			base.append(str(dtime[i]))
 		base = '_'.join(base)
 		fn = os.path.join(RECORDING_DIR, base + WAVE_FN_EXT)
 		return os.path.abspath(fn)
 
-	def _record_mic(self, pre_prompt, post_prompt):
+	def _record_mic(self, pre_prompt, post_prompt, shell_verbose):
 		'''
 		Records mic and returns an audio
 		file of that recording.
@@ -58,14 +74,17 @@ class Recorder():
 		pre_prompt = pre_prompt if pre_prompt else DEF_PRE_PROMPT
 		post_prompt = post_prompt if post_prompt else DEF_POST_PROMPT
 		with sr.Microphone() as source:
-			print()
-			time.sleep(2)
-			print(pre_prompt)
-			time.sleep(1)
-			self._countdown()
-			audio_source = self._r.listen(source, timeout=1,
-										  phrase_time_limit=MAX_REC_LENGTH)
-			print(post_prompt)
+			if shell_verbose:
+				print()
+				time.sleep(2)
+				print(pre_prompt)
+				time.sleep(1)
+				self._countdown()
+			# audio_source = self._r.listen(source, timeout=1,
+			# 							  phrase_time_limit=MAX_REC_LENGTH)
+			audio_source = self._r.listen(source, phrase_time_limit=MAX_REC_LENGTH)
+			if shell_verbose:
+				print(post_prompt)
 		return audio_source
 
 	def _countdown(self, count_down=DEF_COUNT_DOWN):

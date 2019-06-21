@@ -1,4 +1,5 @@
 import tkinter as tk
+
 import src.other.constants as const
 
 class MenuPage(tk.Frame):
@@ -10,9 +11,13 @@ class MenuPage(tk.Frame):
 						 font=controller.title_font)
 		label.pack(side="top", fill="x", pady=10)
 
-		button1 = tk.Button(self, text="Enter Debug mode",
-							command=lambda: controller._show_frame(const.DEBUG_PAGE))
-		button2 = tk.Button(self, text="Enter Deploy mode",
-							command=lambda: controller._show_frame(const.DEPLOY_PAGE))
-		button1.pack(side='bottom', pady=10)
-		button2.pack(side='bottom')
+
+	def init_navigation(self):
+		print(len(self.controller._frames.keys()))
+		for page_name in self.controller._frames.keys():
+			if page_name == MenuPage.__name__:
+				continue
+			button = tk.Button(self, text=f'Enter {page_name}',
+							   command=lambda: self.controller._show_frame(
+									   page_name))
+			button.pack(side='bottom', pady=10)
