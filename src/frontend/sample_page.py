@@ -10,7 +10,15 @@ class SamplePage(tk.Frame):
 		tk.Frame.__init__(self, parent)
 		self._controller = controller
 		self._init_title()
+		self._init_labels()
 		self._init_widgets()
+
+	def _init_labels(self):
+		self._label_names = {}
+		self._label_names[0] = 'Happy'
+		self._label_names[1] = 'Surprised'
+		self._label_names[2] = 'Sad'
+		self._label_names[3] = 'Angry'
 
 	def _init_widgets(self):
 		self._init_navigation_buttons()
@@ -30,25 +38,29 @@ class SamplePage(tk.Frame):
 		self._enable_labels()
 
 	def _init_sample_buttons(self):
-		self._labels = tk.Frame(self)
-		self._labels.pack()
-		for label in ('Happy', 'Angry', 'Sad', 'Surprised'):
-			button = tk.Button(self._labels, text=label,
-							   command=lambda: self._assign_label(label))
+		self._label_buttons = tk.Frame(self)
+		self._label_buttons.pack()
+
+		for label, name in self._label_names.items():
+			print(label, name)
+			button = tk.Button(self._label_buttons, text=name,
+							   command=lambda label=label:
+							   self._assign_label(label))
 			button.pack(side='left', padx=10)
 		self._disable_labels()
 
 	def _disable_labels(self):
-		for child in self._labels.winfo_children():
+		for child in self._label_buttons.winfo_children():
 			child.config(state=tk.DISABLED)
 
 	def _enable_labels(self):
-		for child in self._labels.winfo_children():
+		for child in self._label_buttons.winfo_children():
 			gc.log('entered enable')
 			child.config(state=tk.NORMAL)
 
 	def _assign_label(self, label):
-		pass
+		print(f'label: {label}')
+		self._controller._recorder.labelize_rec(self._last_record_fn, label)
 
 	def _init_play_button(self):
 		play = lambda: PlaySound(self._last_record_fn, flags=SND_FILENAME)

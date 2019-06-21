@@ -9,7 +9,7 @@ class Manager():
 
 		self._logic = Logic()
 		self._recorder = Recorder()
-		self._gui = GUI(self._recorder)
+		self._gui = GUI(self._recorder, self._logic)
 
 	def init(self):
 		gc.enter_func()

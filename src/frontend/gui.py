@@ -10,13 +10,14 @@ import src.other.garcon as gc
 
 class GUI(tk.Tk):
 
-	def __init__(self, recorder, *args, **kwargs):
+	def __init__(self, recorder, logic, *args, **kwargs):
 		tk.Tk.__init__(self, *args, **kwargs)
 		self.minsize(const.WINDOW_WIDTH, const.WINDOW_LENGTH)
 
 		self.title_font = tkfont.Font(family='Helvetica', size=18,
 									  weight="bold")
 		self._recorder = recorder
+		self._logic = logic
 
 	def run(self):
 		self.mainloop()

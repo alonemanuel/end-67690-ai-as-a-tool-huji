@@ -1,4 +1,5 @@
 import os
+import shutil
 import time
 
 import speech_recognition as sr
@@ -16,6 +17,7 @@ DEF_PRE_PROMPT = 'Say something...'
 DEF_COUNT_DOWN = 3
 
 RECORDING_DIR = os.path.join('..', '..', 'recordings')
+EMOTIONS_DIR = os.path.join('..', '..', 'data', 'emotions2')
 WAVE_FN_EXT = '.wav'
 
 class Recorder():
@@ -27,6 +29,14 @@ class Recorder():
 	def __init__(self):
 		self._r = None
 		self._record_idx = 0
+		self._init_emotion_dirs()
+
+	def _init_emotion_dirs(self):
+		self._emotion_dirs = {}
+		self._emotion_dirs[0] = os.path.join(EMOTIONS_DIR, '0_happy')
+		self._emotion_dirs[1] = os.path.join(EMOTIONS_DIR, '1_surprised')
+		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '2_sad')
+		self._emotion_dirs[3] = os.path.join(EMOTIONS_DIR, '3_angry')
 
 	def init(self):
 		gc.enter_func()
@@ -40,6 +50,11 @@ class Recorder():
 		self._save_wav(audio_source, fn)
 		time.sleep(1)
 		return fn
+
+	def labelize_rec(self, rec_fn, label):
+		dest = os.path.join(self._emotion_dirs[label], os.path.basename(
+				rec_fn))
+		shutil.copy(rec_fn, dest, follow_symlinks=True)
 
 	def _get_fn(self):
 		dtime = time.localtime()
@@ -65,9 +80,9 @@ class Recorder():
 				print(pre_prompt)
 				time.sleep(1)
 				self._countdown()
-			audio_source = self._r.listen(source, timeout=1,
-										  phrase_time_limit=MAX_REC_LENGTH)
-			# audio_source = self._r.listen(source, phrase_time_limit=7)
+			# audio_source = self._r.listen(source, timeout=1,
+			# 							  phrase_time_limit=MAX_REC_LENGTH)
+			audio_source = self._r.listen(source, phrase_time_limit=MAX_REC_LENGTH)
 			if shell_verbose:
 				print(post_prompt)
 		return audio_source
