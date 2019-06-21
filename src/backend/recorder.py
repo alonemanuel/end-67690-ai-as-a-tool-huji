@@ -5,7 +5,7 @@ import speech_recognition as sr
 
 import src.other.garcon as gc
 
-MAX_REC_LENGTH = 7
+MAX_REC_LENGTH = 10
 
 DEF_TXT_PROMPT = ''
 
@@ -43,8 +43,8 @@ class Recorder():
 
 	def _get_fn(self):
 		dtime = time.localtime()
-		base = []
-		for i in range(6):
+		base = ['rec']
+		for i in range(1, 6):
 			base.append(str(dtime[i]))
 		base = '_'.join(base)
 		fn = os.path.join(RECORDING_DIR, base + WAVE_FN_EXT)
@@ -67,6 +67,7 @@ class Recorder():
 				self._countdown()
 			audio_source = self._r.listen(source, timeout=1,
 										  phrase_time_limit=MAX_REC_LENGTH)
+			# audio_source = self._r.listen(source, phrase_time_limit=7)
 			if shell_verbose:
 				print(post_prompt)
 		return audio_source
