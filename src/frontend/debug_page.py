@@ -1,4 +1,5 @@
 import tkinter as tk
+from winsound import *
 
 import src.other.constants as const
 
@@ -6,7 +7,7 @@ class DebugPage(tk.Frame):
 
 	def __init__(self, parent, controller):
 		tk.Frame.__init__(self, parent)
-		self.controller = controller
+		self._controller = controller
 		self._init_title()
 		self._init_widgets()
 
@@ -15,15 +16,28 @@ class DebugPage(tk.Frame):
 		self._init_debugging_buttons()
 
 	def _init_debugging_buttons(self):
-		pass
+		record = tk.Button(self, text='Record something',
+						   command=self._record)
+		record.pack()
+
+	def _record(self):
+		self._last_record_fn = self._controller._recorder.record(
+				shell_verbose=False)
+		self._show_play_button()
+
+	def _show_play_button(self):
+		play = lambda :PlaySound(self._last_record_fn,flags=SND_FILENAME)
+		self._play_button = tk.Button(self, text='Play last recording',
+								  command=play)
+		self._play_button.pack()
 
 	def _init_title(self):
 		label = tk.Label(self, text="This is Debug mode",
-						 font=self.controller.title_font)
+						 font=self._controller.title_font)
 		label.pack(side="top", fill="x", pady=10)
 
 	def _init_navigation_buttons(self):
 		button = tk.Button(self, text="Go to the Menu page",
-						   command=lambda: self.controller._show_frame(
+						   command=lambda: self._controller._show_frame(
 								   const.MENU_PAGE))
 		button.pack(side='bottom', pady=10)

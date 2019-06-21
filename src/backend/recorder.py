@@ -32,10 +32,11 @@ class Recorder():
 		gc.enter_func()
 		self._r = sr.Recognizer()
 
-	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT):
+	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT,
+			   shell_verbose=True):
 		gc.enter_func()
 		fn = self._get_fn()
-		audio_source = self._record_mic(pre_prompt, post_prompt)
+		audio_source = self._record_mic(pre_prompt, post_prompt, shell_verbose)
 		self._save_wav(audio_source, fn)
 		time.sleep(1)
 		return fn
@@ -49,7 +50,7 @@ class Recorder():
 		fn = os.path.join(RECORDING_DIR, base + WAVE_FN_EXT)
 		return os.path.abspath(fn)
 
-	def _record_mic(self, pre_prompt, post_prompt):
+	def _record_mic(self, pre_prompt, post_prompt, shell_verbose):
 		'''
 		Records mic and returns an audio
 		file of that recording.
@@ -58,14 +59,16 @@ class Recorder():
 		pre_prompt = pre_prompt if pre_prompt else DEF_PRE_PROMPT
 		post_prompt = post_prompt if post_prompt else DEF_POST_PROMPT
 		with sr.Microphone() as source:
-			print()
-			time.sleep(2)
-			print(pre_prompt)
-			time.sleep(1)
-			self._countdown()
+			if shell_verbose:
+				print()
+				time.sleep(2)
+				print(pre_prompt)
+				time.sleep(1)
+				self._countdown()
 			audio_source = self._r.listen(source, timeout=1,
 										  phrase_time_limit=MAX_REC_LENGTH)
-			print(post_prompt)
+			if shell_verbose:
+				print(post_prompt)
 		return audio_source
 
 	def _countdown(self, count_down=DEF_COUNT_DOWN):

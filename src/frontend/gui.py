@@ -1,19 +1,20 @@
 import tkinter as tk  # python 3
 from tkinter import font  as tkfont  # python 3
 
+import src.other.constants as const
 from src.frontend.debug_page import DebugPage
 from src.frontend.deploy_page import DeployPage
 from src.frontend.menu_page import MenuPage
-import src.other.constants as const
 
 class GUI(tk.Tk):
 
-	def __init__(self, *args, **kwargs):
+	def __init__(self, recorder, *args, **kwargs):
 		tk.Tk.__init__(self, *args, **kwargs)
 		self.minsize(const.WINDOW_WIDTH, const.WINDOW_LENGTH)
 
 		self.title_font = tkfont.Font(family='Helvetica', size=18,
 									  weight="bold")
+		self._recorder = recorder
 
 	def run(self):
 		self.mainloop()
