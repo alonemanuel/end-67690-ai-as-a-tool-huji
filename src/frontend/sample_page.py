@@ -2,8 +2,9 @@ import tkinter as tk
 from winsound import *
 
 import src.other.constants as const
+import src.other.garcon as gc
 
-class DeployPage(tk.Frame):
+class SamplePage(tk.Frame):
 
 	def __init__(self, parent, controller):
 		tk.Frame.__init__(self, parent)
@@ -13,10 +14,8 @@ class DeployPage(tk.Frame):
 
 	def _init_widgets(self):
 		self._init_navigation_buttons()
-		self._init_learning_buttons()
 		self._init_debugging_buttons()
-	def _init_learning_buttons(self):
-		pass
+		self._init_sample_buttons()
 
 	def _init_debugging_buttons(self):
 		self._record_btn = tk.Button(self, text='Record something',
@@ -28,6 +27,28 @@ class DeployPage(tk.Frame):
 		self._last_record_fn = self._controller._recorder.record(
 				shell_verbose=False)
 		self._play_button.config(state=tk.NORMAL)
+		self._enable_labels()
+
+	def _init_sample_buttons(self):
+		self._labels = tk.Frame(self)
+		self._labels.pack()
+		for label in ('Happy', 'Angry', 'Sad', 'Surprised'):
+			button = tk.Button(self._labels, text=label,
+							   command=lambda: self._assign_label(label))
+			button.pack(side='left', padx=10)
+		self._disable_labels()
+
+	def _disable_labels(self):
+		for child in self._labels.winfo_children():
+			child.config(state=tk.DISABLED)
+
+	def _enable_labels(self):
+		for child in self._labels.winfo_children():
+			gc.log('entered enable')
+			child.config(state=tk.NORMAL)
+
+	def _assign_label(self, label):
+		pass
 
 	def _init_play_button(self):
 		play = lambda: PlaySound(self._last_record_fn, flags=SND_FILENAME)
@@ -37,7 +58,7 @@ class DeployPage(tk.Frame):
 		self._play_button.pack(pady=10)
 
 	def _init_title(self):
-		label = tk.Label(self, text='This is Deploy page',
+		label = tk.Label(self, text="This is Sampling mode",
 						 font=self._controller.title_font)
 		label.pack(side="top", fill="x", pady=10)
 

@@ -32,12 +32,12 @@ class Models(Enum):
 
 
 # Labels #
-LABEL_DICT = {0:'angry',1:'calm',2:'disgust',3:'fearful',4:'happy',5:'neutral',
-			  6:'sad',7:'surprised'}
+LABEL_DICT = {0:'angry',1:'calm',2:'disgust',3:'fearful',4:'0_happy',5:'neutral',
+			  6:'2_sad',7:'surprised'}
 # LABEL_DICT[0] = 'neutral'
 # LABEL_DICT[1] = 'calm'
-# LABEL_DICT[2] = 'happy'
-# LABEL_DICT[3] = 'sad'
+# LABEL_DICT[2] = '0_happy'
+# LABEL_DICT[3] = '2_sad'
 # LABEL_DICT[4] = 'angry'
 # LABEL_DICT[5] = 'fearful'
 # LABEL_DICT[6] = 'disgust'

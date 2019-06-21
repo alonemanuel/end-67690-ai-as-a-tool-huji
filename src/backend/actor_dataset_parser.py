@@ -100,8 +100,8 @@ class ActorDataParser:
 		dict = {}
 		dict['01'] = 'neutral'
 		dict['02'] = 'calm'
-		dict['03'] = 'happy'
-		dict['04'] = 'sad'
+		dict['03'] = '0_happy'
+		dict['04'] = '2_sad'
 		dict['05'] = 'angry'
 		dict['06'] = 'fearful'
 		dict['07'] = 'disgust'

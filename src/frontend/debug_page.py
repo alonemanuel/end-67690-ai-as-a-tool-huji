@@ -16,20 +16,25 @@ class DebugPage(tk.Frame):
 		self._init_debugging_buttons()
 
 	def _init_debugging_buttons(self):
-		record = tk.Button(self, text='Record something',
+		self._record_btn = tk.Button(self, text='Record something',
 						   command=self._record)
-		record.pack()
+		self._record_btn.pack()
+		self._init_play_button()
 
 	def _record(self):
 		self._last_record_fn = self._controller._recorder.record(
 				shell_verbose=False)
-		self._show_play_button()
+		self._play_button.config(state=tk.NORMAL)
 
-	def _show_play_button(self):
+
+	def _init_play_button(self):
 		play = lambda :PlaySound(self._last_record_fn,flags=SND_FILENAME)
 		self._play_button = tk.Button(self, text='Play last recording',
 								  command=play)
-		self._play_button.pack()
+		self._play_button.config(state=tk.DISABLED)
+		self._play_button.pack(pady=10)
+
+
 
 	def _init_title(self):
 		label = tk.Label(self, text="This is Debug mode",
