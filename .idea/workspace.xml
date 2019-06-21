@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act04_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act04_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act06_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act07_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act08_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act09_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act10_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act11_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act15_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act16_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act18_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act18_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act19_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act20_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act20_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act21_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act21_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act22_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act22_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act23_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act24_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_normal_kids_act24_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act03_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act03_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act04_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act05_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act06_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act08_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act08_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act10_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act11_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act13_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act15_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act16_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act16_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act17_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act17_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act18_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act19_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act20_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act22_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act24_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_dogs_act24_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act03_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act04_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act04_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act05_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act05_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act06_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act07_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act08_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act08_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act13_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act14_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act14_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act15_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act17_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act19_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act20_f_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act20_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act21_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act21_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act22_f_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act23_m_0.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions/surprised/surprised_speech_strong_kids_act23_m_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/end_project_pres_alon_emanuel.gslides" beforeDir="false" afterPath="$PROJECT_DIR$/docs/end_project_pres_alon_emanuel.gslides" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -34,7 +102,7 @@
     <session id="-1034707243">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -45,7 +113,7 @@
           <entry key="csv" value="1" />
           <entry key="labels_to_sample" value="1" />
           <entry key="png" value="25" />
-          <entry key="py" value="104" />
+          <entry key="py" value="105" />
           <entry key="test" value="1" />
           <entry key="txt" value="2" />
           <entry key="wav" value="3" />
@@ -57,7 +125,7 @@
           <entry key="CSV" value="6" />
           <entry key="Image" value="25" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="104" />
+          <entry key="Python" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -80,13 +148,21 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="445266682">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/other/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="221">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -98,17 +174,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="5270">
               <caret line="311" selection-start-line="311" selection-end-line="311" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/wavio.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
             </state>
           </provider>
         </entry>
@@ -116,12 +183,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/preprocessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+            <state relative-caret-position="629">
+              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1560999363057" expanded="true" signature="158:160" ph="..." />
-                <marker date="1560999363057" expanded="true" signature="461:462" ph="..." />
               </folding>
             </state>
           </provider>
@@ -130,11 +195,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="663">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,7 +207,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="663">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
@@ -152,7 +216,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
+            <state relative-caret-position="9452">
               <caret line="573" selection-start-line="573" selection-end-line="573" />
             </state>
           </provider>
@@ -161,12 +225,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/other/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
+            <state relative-caret-position="510">
               <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
-                <marker date="1560997592079" expanded="true" signature="158:160" ph="..." />
-                <marker date="1560997592079" expanded="true" signature="418:461" ph="..." />
               </folding>
             </state>
           </provider>
@@ -177,9 +239,21 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="40" column="24" selection-end-line="84" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -284,9 +358,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="width" value="1683" />
-    <option name="height" value="1088" />
+    <option name="x" value="157" />
+    <option name="width" value="1348" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -296,6 +370,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,7 +419,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,7 +427,7 @@
     <property name="SearchEverywhereHistoryKey" value="kagjfl&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../67577_IML/Hackathon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../67577_IML/Exercises/Ex6" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
@@ -489,15 +563,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="0" width="1346" height="870" extended-state="0" />
+    <frame x="126" y="0" width="1078" height="697" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27527216" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35363457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.32428765" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2523745" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2523745" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,10 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560958948882" expanded="true" signature="704:761" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <marker date="1560976191330" expanded="true" signature="45:47" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,46 +734,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/SVM_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/KNN_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/RF_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/LOG_REG_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/k-NearestNeighbors_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/LogisticRegression_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/RandomForest_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SVM_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/KNN_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/RF_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/LOG_REG_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/k-NearestNeighbors_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/LogisticRegression_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/RandomForest_testset.png" />
     <entry file="file://$PROJECT_DIR$/src/backend/actor_dataset_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560958948234" expanded="true" signature="1386:1458" ph="..." />
-            <marker date="1560958948234" expanded="true" signature="2585:2587" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,11 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560990116166" expanded="true" signature="409:979" ph="..." />
-            <marker date="1560990116166" expanded="true" signature="1331:1332" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,12 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <marker date="1560990762112" expanded="true" signature="417:420" ph="..." />
-            <marker date="1560990762112" expanded="true" signature="1298:1299" ph="..." />
-            <marker date="1560990762112" expanded="true" signature="2306:2944" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,14 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1560981582478" expanded="true" signature="111:235" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="111:582" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="580:582" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="638:641" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="942:945" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,11 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560958951984" expanded="true" signature="390:393" ph="..." />
-            <marker date="1560958951984" expanded="true" signature="638:1202" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,12 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9">
           <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560997711452" expanded="true" signature="315:316" ph="..." />
-            <marker date="1560997711452" expanded="true" signature="360:396" ph="..." />
-            <marker date="1560997711452" expanded="true" signature="892:979" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,23 +860,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="573" selection-start-line="573" selection-end-line="573" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/other/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="221">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -881,42 +872,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="5270">
           <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/preprocessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="629">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1560999363057" expanded="true" signature="158:160" ph="..." />
-            <marker date="1560999363057" expanded="true" signature="461:462" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="663">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9452">
+          <caret line="573" selection-start-line="573" selection-end-line="573" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="510">
           <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1560997592079" expanded="true" signature="158:160" ph="..." />
-            <marker date="1560997592079" expanded="true" signature="418:461" ph="..." />
           </folding>
         </state>
       </provider>
@@ -926,6 +926,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" column="24" selection-end-line="84" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
