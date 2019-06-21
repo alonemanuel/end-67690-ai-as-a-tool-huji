@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/manager.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/EndProject$bucky.coverage" NAME="bucky Coverage Results" MODIFIED="1560976193500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/online/frontend" />
-    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1560999363228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
+    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1561134673832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
     <SUITE FILE_PATH="coverage/EndProject$main.coverage" NAME="main Coverage Results" MODIFIED="1560973276638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="DatabaseView">
@@ -34,10 +39,11 @@
     <session id="-1034707243">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,7 +51,7 @@
           <entry key="csv" value="1" />
           <entry key="labels_to_sample" value="1" />
           <entry key="png" value="25" />
-          <entry key="py" value="104" />
+          <entry key="py" value="114" />
           <entry key="test" value="1" />
           <entry key="txt" value="2" />
           <entry key="wav" value="3" />
@@ -57,16 +63,16 @@
           <entry key="CSV" value="6" />
           <entry key="Image" value="25" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="104" />
+          <entry key="Python" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="3605" />
           <entry key="csv" value="51" />
-          <entry key="dummy" value="64" />
+          <entry key="dummy" value="92" />
           <entry key="labels_to_sample" value="46" />
-          <entry key="py" value="33070" />
+          <entry key="py" value="35081" />
           <entry key="test" value="11" />
           <entry key="text_to_sample" value="19" />
           <entry key="words_to_sample" value="91" />
@@ -75,114 +81,132 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="188" />
-          <entry key="PLAIN_TEXT" value="94" />
-          <entry key="Python" value="36675" />
+          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="Python" value="38686" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="311" selection-start-line="311" selection-end-line="311" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/wavio.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/preprocessor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1560999363057" expanded="true" signature="158:160" ph="..." />
-                <marker date="1560999363057" expanded="true" signature="461:462" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="573" selection-start-line="573" selection-end-line="573" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-                <marker date="1560997592079" expanded="true" signature="158:160" ph="..." />
-                <marker date="1560997592079" expanded="true" signature="418:461" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_testset.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.44382912">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="663">
+                  <caret line="48" selection-start-line="48" selection-end-line="48" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                    <marker date="1561037628530" expanded="true" signature="446:449" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="663">
+                  <caret line="55" selection-start-line="55" selection-end-line="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="9452">
+                  <caret line="573" selection-start-line="573" selection-end-line="573" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/frontend/debug_page.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/frontend/menu_page.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/other/manager.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                    <marker date="1561123345079" expanded="true" signature="158:160" ph="..." />
+                    <marker date="1561123345079" expanded="true" signature="422:485" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/frontend/gui.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="740">
+                  <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+                  <folding>
+                    <element signature="e#0#32#0" expanded="true" />
+                    <marker date="1561134266864" expanded="true" signature="514:535" ph="..." />
+                    <marker date="1561134266864" expanded="true" signature="977:1338" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/other/constants.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="354">
+                  <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                    <marker date="1561131187651" expanded="true" signature="409:979" ph="..." />
+                    <marker date="1561131187651" expanded="true" signature="1331:1332" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -223,9 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Tutorial/index.html" />
-        <option value="$PROJECT_DIR$/Tutorial/styles.css" />
         <option value="$PROJECT_DIR$/Tutorial/app.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/hello-world/src/app/app.component.ts" />
@@ -267,13 +288,16 @@
         <option value="$PROJECT_DIR$/src/frontend/manager.py" />
         <option value="$PROJECT_DIR$/src/other/main.py" />
         <option value="$PROJECT_DIR$/src/other/garcon.py" />
-        <option value="$PROJECT_DIR$/src/other/constants.py" />
         <option value="$PROJECT_DIR$/src/backend/model_selector.py" />
-        <option value="$PROJECT_DIR$/src/frontend/gui.py" />
         <option value="$PROJECT_DIR$/src/backend/logic.py" />
-        <option value="$PROJECT_DIR$/src/other/manager.py" />
         <option value="$PROJECT_DIR$/src/backend/recorder.py" />
         <option value="$PROJECT_DIR$/src/backend/preprocessor.py" />
+        <option value="$PROJECT_DIR$/src/other/manager.py" />
+        <option value="$PROJECT_DIR$/src/other/constants.py" />
+        <option value="$PROJECT_DIR$/src/frontend/deploy_page.py" />
+        <option value="$PROJECT_DIR$/src/frontend/gui.py" />
+        <option value="$PROJECT_DIR$/src/frontend/debug_page.py" />
+        <option value="$PROJECT_DIR$/src/frontend/menu_page.py" />
       </list>
     </option>
   </component>
@@ -283,10 +307,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="width" value="1683" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="157" />
+    <option name="width" value="1348" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -307,6 +331,19 @@
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions" type="462c0819:PsiDirectoryNode" />
+              <item name="happy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -338,6 +375,12 @@
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -353,7 +396,7 @@
     <property name="SearchEverywhereHistoryKey" value="kagjfl&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../67577_IML/Hackathon" />
+    <property name="last_opened_file_path" value="G:/My Drive/School/Year2/Semester2/67690_AI_as_a_Tool/EndProject" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
@@ -489,15 +532,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="196" y="0" width="1346" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27527216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15167785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.32428765" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2523745" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.32384825" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25100672" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,34 +612,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/librosa/util/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/librosa/core/spectrum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1556" selection-start-line="1556" selection-end-line="1556" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/librosa/feature/spectral.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="1441" selection-start-line="1441" selection-end-line="1441" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/metrics/scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/linear_model/logistic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -626,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <marker date="1560976191330" expanded="true" signature="45:47" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -670,45 +682,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/SVM_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/KNN_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/RF_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/LOG_REG_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/k-NearestNeighbors_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/LogisticRegression_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/RandomForest_testset.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/SVM_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/KNN_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/RF_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/LOG_REG_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/k-NearestNeighbors_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/LogisticRegression_testset.png" />
+    <entry file="file://$PROJECT_DIR$/images/RandomForest_testset.png" />
     <entry file="file://$PROJECT_DIR$/src/backend/actor_dataset_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560958948234" expanded="true" signature="1386:1458" ph="..." />
-            <marker date="1560958948234" expanded="true" signature="2585:2587" ph="..." />
+            <marker date="1561037628526" expanded="true" signature="1386:1458" ph="..." />
+            <marker date="1561037628526" expanded="true" signature="2585:2587" ph="..." />
           </folding>
         </state>
       </provider>
@@ -750,18 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560990116166" expanded="true" signature="409:979" ph="..." />
-            <marker date="1560990116166" expanded="true" signature="1331:1332" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -775,9 +751,9 @@
           <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1560990762112" expanded="true" signature="417:420" ph="..." />
-            <marker date="1560990762112" expanded="true" signature="1298:1299" ph="..." />
-            <marker date="1560990762112" expanded="true" signature="2306:2944" ph="..." />
+            <marker date="1561037628541" expanded="true" signature="417:420" ph="..." />
+            <marker date="1561037628541" expanded="true" signature="1298:1299" ph="..." />
+            <marker date="1561037628541" expanded="true" signature="2306:2944" ph="..." />
           </folding>
         </state>
       </provider>
@@ -793,21 +769,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/RandomForest_trainset.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1560981582478" expanded="true" signature="111:235" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="111:582" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="580:582" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="638:641" ph="..." />
-            <marker date="1560981582478" expanded="true" signature="942:945" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/speech_recognition/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,9 +802,9 @@
           <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1560997711452" expanded="true" signature="315:316" ph="..." />
-            <marker date="1560997711452" expanded="true" signature="360:396" ph="..." />
-            <marker date="1560997711452" expanded="true" signature="892:979" ph="..." />
+            <marker date="1561037628591" expanded="true" signature="315:316" ph="..." />
+            <marker date="1561037628591" expanded="true" signature="360:396" ph="..." />
+            <marker date="1561037628591" expanded="true" signature="892:979" ph="..." />
           </folding>
         </state>
       </provider>
@@ -855,23 +816,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="573" selection-start-line="573" selection-end-line="573" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/other/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="221">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -881,43 +828,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="5270">
           <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/preprocessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        <state relative-caret-position="629">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1560999363057" expanded="true" signature="158:160" ph="..." />
-            <marker date="1560999363057" expanded="true" signature="461:462" ph="..." />
+            <marker date="1561037628561" expanded="true" signature="158:160" ph="..." />
+            <marker date="1561037628561" expanded="true" signature="461:462" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="663">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1560994504949" expanded="true" signature="446:449" ph="..." />
+            <marker date="1561037628530" expanded="true" signature="446:449" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/manager.py">
+    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/utils/validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1560997592079" expanded="true" signature="158:160" ph="..." />
-            <marker date="1560997592079" expanded="true" signature="418:461" ph="..." />
-          </folding>
+        <state relative-caret-position="663">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/prosody-venv/Lib/site-packages/sklearn/svm/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9452">
+          <caret line="573" selection-start-line="573" selection-end-line="573" />
         </state>
       </provider>
     </entry>
@@ -926,6 +875,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/SuportVectorMachines_trainset.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="43" column="36" selection-end-line="84" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1561123345079" expanded="true" signature="158:160" ph="..." />
+            <marker date="1561123345079" expanded="true" signature="422:485" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/My Drive/School/Year1/sem1/intro/week12/sub12_intro/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="188" column="6" lean-forward="true" selection-start-line="188" selection-start-column="6" selection-end-line="188" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1561131187651" expanded="true" signature="409:979" ph="..." />
+            <marker date="1561131187651" expanded="true" signature="1331:1332" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1561134266864" expanded="true" signature="514:535" ph="..." />
+            <marker date="1561134266864" expanded="true" signature="977:1338" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/debug_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/menu_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

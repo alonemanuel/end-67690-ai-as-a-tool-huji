@@ -54,4 +54,12 @@ N_MFCCS = 40
 
 
 # GUI #
+WINDOW_LENGTH = 720
+WINDOW_WIDTH = 1280
+TITLE_TXT= 'emotio.'
+REC_TXT = 'Record'
+
+MENU_PAGE='MenuPage'
+DEPLOY_PAGE = 'DeployPage'
+DEBUG_PAGE ='DebugPage'
 

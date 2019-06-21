@@ -1,65 +1,47 @@
-from tkinter import *
+import tkinter as tk  # python 3
+from tkinter import font  as tkfont  # python 3
 
-from flask import Flask
+from src.frontend.debug_page import DebugPage
+from src.frontend.deploy_page import DeployPage
+from src.frontend.menu_page import MenuPage
+import src.other.constants as const
 
-import src.other.garcon as gc
+class GUI(tk.Tk):
 
+	def __init__(self, *args, **kwargs):
+		tk.Tk.__init__(self, *args, **kwargs)
+		self.minsize(const.WINDOW_WIDTH, const.WINDOW_LENGTH)
 
-class GUI:
-	def __init__(self):
-		self._root = None
-		self._canvas = None
-		self._rec_button = None
-		self._display_txt = None
-		self._action_txt = None
-
-	def init(self):
-		gc.enter_func()
-		self._root = Tk()
-		self._canvas = Canvas(self._root)
-		self._action_txt = Label(self._root)
-		self._action_txt.grid(column=0, row=1)
-		# self._canvas = Canvas(self._root, width=200, height=200,
-		# borderwidth=0,
-		# 					  highlightthickness=0, bg='black')
-		self._init_screen()
-
-	# self._init_rec_button()
+		self.title_font = tkfont.Font(family='Helvetica', size=18,
+									  weight="bold")
 
 	def run(self):
-		gc.enter_func()
-		self._root.mainloop()
+		self.mainloop()
 
-	def _record(self, *kwargs):
-		gc.enter_func()
-		self._start_record_gui()
+	def init(self):
+		# the container is where we'll stack a bunch of frames
+		# on top of each other, then the one we want visible
+		# will be raised above the others
+		self._container = tk.Frame(self)
+		self._container.pack(side="top", fill="both", expand=True)
+		self._container.grid_rowconfigure(0, weight=1)
+		self._container.grid_columnconfigure(0, weight=1)
+		self._init_pages()
+		self._show_frame(const.MENU_PAGE)
 
-	def show_emotion(self, emotion):
-		gc.enter_func()
-		pass
+	def _init_pages(self):
+		self.frames = {}
+		for F in (MenuPage, DebugPage, DeployPage):
+			page_name = F.__name__
+			frame = F(parent=self._container, controller=self)
+			self.frames[page_name] = frame
 
-	def should_exit(self):
-		gc.enter_func()
-		pass
+			# put all of the pages in the same location;
+			# the one on the top of the stacking order
+			# will be the one that is visible.
+			frame.grid(row=0, column=0, sticky="nsew")
 
-	def _start_record_gui(self):
-		gc.enter_func()
-		self._action_txt.config(text='recording.', font=('Arial Bold', 50))
-
-	def _init_rec_button(self):
-		x, y, r = 100, 120, 50
-		record = self._canvas.create_oval(x - r, y - r, x + r, y + r,
-										  fill='red', tags='record')
-		self._canvas.tag_bind('record', '<Button-1>', self._record)
-		self._canvas.pack()
-
-	def _init_screen(self):
-		self._root.geometry('350x200')
-		self._display_txt = Label(self._root, text='emotio',
-								  font=('Arial Bold', 50))
-		self._display_txt.grid(column=0, row=0)
-		self._canvas.grid(column=1, row=1)
-		x, y, r = 100, 120, 50
-		record = self._canvas.create_oval(x - r, y - r, x + r, y + r,
-										  fill='red', tags='record')
-		self._canvas.tag_bind('record', '<Button-1>', self._record)
+	def _show_frame(self, page_name):
+		'''Show a frame for the given page name'''
+		frame = self.frames[page_name]
+		frame.tkraise()
