@@ -13,20 +13,17 @@ class DataGetter:
 	'''
 
 	def __init__(self, test_ratio=const.TEST_RATIO):
-		self._data_path = None
+		self._data_path = const.DEPLOY_EMOTIONS_DIR
 		self._test_ratio = test_ratio
-		self._X_all, self._y_all = None, None
+		self._X_all, self._y_all = self._get_all_data()
 
-	def init(self, in_deploy=False):
+	def get_train_data(self):
 		'''
-		Inits a DataGetter instance and gets it ready for action.
-		As part of the init, it collects the data.
+		:return:	type=tuple:
+			tuple[0]=X:	type=list,	shape=(m,	)
+			tuple[1]=y:	type=list,	shape=(m,	)
 		'''
-		if in_deploy:
-			self._data_path = const.DEPLOY_EMOTIONS_DIR
-		else:
-			self._data_path = const.EMOTIONS_DIR
-		self._X_all, self._y_all = self._get_all_data(in_deploy)
+		return self._X_all, self._y_all
 
 	def get_train_test(self, test_ratio=const.TEST_RATIO):
 		'''
@@ -44,7 +41,7 @@ class DataGetter:
 															random_state=73)
 		return X_train, y_train, X_test, y_test
 
-	def _get_all_data(self, in_deploy):
+	def _get_all_data(self):
 		'''
 		Gets the training data from a local dir.
 		:return:	type=tuple,	shape=2, where:
@@ -54,38 +51,11 @@ class DataGetter:
 		gc.enter_func()
 
 		X_all, y_all = [], []
-		for label, emotion_dir in enumerate(os.listdir(self._data_path)):
+		for emotion_dir in os.listdir(self._data_path):
 			emotion_dir_path = os.path.join(self._data_path, emotion_dir)
+			label = const.DIR_LABEL_DICT[emotion_dir]
 			for recording in os.listdir(emotion_dir_path):
 				recording_path = os.path.join(emotion_dir_path, recording)
 				X_all.append(recording_path)
 				y_all.append(label)
 		return X_all, y_all
-
-# def _get_all_data2(self, n_mfcc=N_MFCCS):
-# 	'''
-# 	Returns raw data as found in data_path
-# 	:return:	type=tuple,	shape=2, where:
-# 		tuple[0] = X_raw:	type=np.array,	shape=(m,	n_mfcc)
-# 		tuple[1] = y_raw:	type=np.array,	shape=(m,	)
-# 	'''
-# 	gc.enter_func()
-# 	X_raw, y_raw = [], []
-# 	for label, emotion_dir in enumerate(os.listdir(self._data_path)):
-# 		for recording in os.listdir(emotion_dir):
-# 			y, sr = self._get_raw_data_from_file(recording)
-# 			mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=n_mfcc)
-# 			meaned = np.mean(mfccs.T, axis=0)
-# 			X_raw.append(meaned)
-# 			y_raw.append(label)
-# 	return np.array(X_raw), np.array(y_raw)
-#
-# def _get_raw_data_from_file(self, fn):
-# 	'''
-# 	Returns raw data from audio file.
-# 	:param fn: filename for .wav file
-# 	:return: type=tuple,	shape=2, where:
-# 		tuple[0] = waveform:	type=np.array,	shape=(n,	)
-# 		tuple[1] = sample rate:	type=scalar>0
-# 	'''
-# 	return librosa.load(fn)

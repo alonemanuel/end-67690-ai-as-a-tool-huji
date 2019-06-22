@@ -4,8 +4,7 @@ from enum import Enum
 from sklearn import svm
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression, Lasso, ElasticNet
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
 MODEL_NAME, MODEL_CLASS = 0, 1
@@ -20,6 +19,7 @@ class Models(Enum):
 	# ELASTIC = 'Elastic net', ElasticNet
 	# MNB = 'Multinomial Naive-Bayes', MultinomialNB
 	LDA = 'Linear Discriminant Analysis', LinearDiscriminantAnalysis
+
 	@staticmethod
 	def list():
 		return list(map(lambda m: m.value[MODEL_CLASS], Models))
@@ -30,40 +30,29 @@ class Models(Enum):
 	def get_class(self):
 		return self.value[MODEL_CLASS]
 
-
 CHOSEN_MODEL = LogisticRegression
 
-
-# Labels #
-LABEL_DICT = {0:'angry',1:'calm',2:'disgust',3:'fearful',4:'0_happy',5:'neutral',
-			  6:'2_sad',7:'surprised'}
-# LABEL_DICT[0] = 'neutral'
-# LABEL_DICT[1] = 'calm'
-# LABEL_DICT[2] = '0_happy'
-# LABEL_DICT[3] = '2_sad'
-# LABEL_DICT[4] = 'angry'
-# LABEL_DICT[5] = 'fearful'
-# LABEL_DICT[6] = 'disgust'
-# LABEL_DICT[7] = 'surprised'
+# Audio #
+WAV_EXTN = '.wav'
 
 # Directories #
-DATA_DIR = os.path.join( '..','..', 'data')
+DATA_DIR = os.path.join('..', '..', 'data')
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 DEPLOY_EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions2')
+LABEL_DIR_DICT = {0: '0_happy', 1: '1_surprised', 2: '2_sad', 3: '3_angry'}
+DIR_LABEL_DICT = {'0_happy': 0, '1_surprised': 1, '2_sad': 2, '3_angry': 3}
 
 # Learning #
 # TEST_RATIO = 0.15
 TEST_RATIO = 0.15
 N_MFCCS = 40
 
-
 # GUI #
 WINDOW_LENGTH = 720
 WINDOW_WIDTH = 1280
-TITLE_TXT= 'emotio.'
+TITLE_TXT = 'emotio.'
 REC_TXT = 'Record'
 
-MENU_PAGE='MenuPage'
+MENU_PAGE = 'MenuPage'
 DEPLOY_PAGE = 'DeployPage'
-DEBUG_PAGE ='DebugPage'
-
+DEBUG_PAGE = 'DebugPage'

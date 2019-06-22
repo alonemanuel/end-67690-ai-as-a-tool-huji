@@ -1,14 +1,7 @@
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix, accuracy_score
 
-import src.other.constants as const
 import src.other.garcon as gc
 from src.backend.data_getter import DataGetter
-from src.backend.model_selector import ModelSelector
 from src.backend.preprocessor import Preprocessor
 
 class Logic():
@@ -24,91 +17,25 @@ class Logic():
 		:var _X_train: 	type=list>filenames,	shape=(m_test,	)
 		:var _X_train: 	type=list>filenames,	shape=(m_train,	)
 		'''
+		self._learner = LogisticRegression()
 		self._data_getter = DataGetter()
-		self._model_selector = ModelSelector()
 		self._preprocessor = Preprocessor()
 
-		self._X_train, self._y_train = None, None
-		self._X_test, self._y_test = None, None
-
-		self._chosen_model = None
-
-	def init(self, in_deploy=False):
-		self._init_deploy() if in_deploy else self._init_prepare()
-
-	def _init_deploy(self):
-		gc.enter_func()
-		self._data_getter.init(in_deploy=True)
-		self._chosen_model=const.CHOSEN_MODEL()
-
-
-
-	def _init_prepare(self):
-		'''
-		Prepares the ground for the learning task.
-		:param verbose:	Should this process be verbose or not?
-		'''
-		gc.enter_func()
-		self._data_getter.init()
-		self._init_data()
-		self._preprocessor.init(self._X_train, self._y_train)
-		self._model_selector.init(self._preprocessor, self._X_train,
-								  self._y_train)
-		self._init_model()
-
 	def learn(self):
-		X_train, y_train, _, _ = \
-			self._data_getter.get_train_test(0.001)
-
-		X_prep = self._preprocessor.preprocess(X_train)
-		y_prep = np.array(y_train)
-		self._chosen_model.fit(X_prep, y_prep)
+		'''
+		Basically, fits the learner with the most relevant training data.
+		'''
+		X_train, y_train = self._data_getter.get_train_data()
+		X_prep = self._preprocessor.preprocess_X(X_train)
+		y_prep = self._preprocessor.preprocess_y(y_train)
+		self._learner.fit(X_prep, y_prep)
 
 	def predict(self, record_fns):
 		'''
-
-		:param record_fns:
-		:return:
+		:param record_fns:	type=list/string,	shape=(m,	)
+		:return:			type=list,			shape=(m,	)
 		'''
-		gc.log(f'record_fns = {record_fns}')
-		X = self._preprocessor.preprocess(record_fns)
-		prediction = self._chosen_model.predict(X)
-		return prediction
-
-	def _init_data(self, test_ratio=const.TEST_RATIO):
-		self._X_train, self._y_train, self._X_test, self._y_test = \
-			self._data_getter.get_train_test(test_ratio)
-
-	def _init_model(self):
-		self._chosen_model, self._model_name = \
-			self._model_selector.choose_model()
-		self._report(self._X_test, self._y_test, is_test=True)
-		X_all = self._X_train + self._X_test
-		y_all = self._y_train + self._y_test
-
-	# X_all = np.row_stack((self._X_train, self._X_test))
-	# y_all = np.row_stack((self._y_train, self._y_test))
-	# self._chosen_model.fit(self._X_train, self._y_train)
-
-	# self._model_selector.report(self._chosen_model, self._X_test,
-	# 							self._y_test, is_test=True)
-
-	def _report(self, X, y, is_test=False):
 		gc.enter_func()
-		y_pred = self.predict(X)
-		y_real = np.array(y)
-		cm = confusion_matrix(y_real, y_pred)
-		accu_score = '{0:.3f}'.format(accuracy_score(y_real, y_pred))
-		cm_df = pd.DataFrame(cm)
-		cm_df.rename(columns=const.LABEL_DICT, index=const.LABEL_DICT,
-					 inplace=True)
-		title_suffix = 'Test set' if is_test else 'Train set'
-		gc.init_plt(
-				f'{self._model_name}, {title_suffix}\nAccuracy: '
-				f'{accu_score}')
-		sns.heatmap(cm_df, annot=True)
-		plt.xlabel('True label')
-		plt.ylabel('Predicted label')
-		fn_suffix = 'testset' if is_test else 'trainset'
-		fn_learner_name = self._model_name.replace(' ', '')
-		gc.save_plt(f'{fn_learner_name}_{fn_suffix}')
+		X = self._preprocessor.preprocess_X(record_fns)
+		prediction = self._learner.predict(X)
+		return prediction

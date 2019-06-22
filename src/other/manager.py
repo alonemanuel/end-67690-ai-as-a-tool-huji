@@ -4,24 +4,23 @@ from src.backend.recorder import Recorder
 from src.frontend.gui import GUI
 
 class Manager():
-	def __init__(self):
-		Recorder.check_is_dir('..\\..\\recordings')
+	'''
+	The manager of the program. Runs all stuff that needs to run.
+	'''
 
-		self._logic = Logic()
+	def __init__(self):
+		'''
+		Inits a manager.
+		'''
+		self._logic = Logic(in_deploy=True)
 		self._recorder = Recorder()
 		self._gui = GUI(self._recorder, self._logic)
-
-	def init(self):
-		gc.enter_func()
-		self._recorder.init()
-		self._logic.init(in_deploy=True)
-		self._gui.init()
-
 
 	def run(self):
 		gc.enter_func()
 		self._gui.run()
-		# self._record_loop()
+
+	# self._record_loop()
 
 	# self._gui.run()
 	# while not self._gui.should_exit():

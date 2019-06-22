@@ -7,6 +7,10 @@ import src.other.constants as const
 import src.other.garcon as gc
 
 class Preprocessor():
+	'''
+	Module for preprocessing the data.
+	'''
+
 	def __init__(self):
 		self._X_train, self._y_train = None, None
 
@@ -19,32 +23,58 @@ class Preprocessor():
 		gc.enter_func()
 		self._X_train, self._y_train = X_train, y_train
 
-	def preprocess(self, filenames):
+	def preprocess_X(self, filenames):
 		'''
-		Preprocesses a .wav filename.
-		:param filename: 	type=list>.wav filename,	shape=(m,	)
-		:return: 	type=np.array,	shape=(m,	d)
+		:param filenames:	type=list,		shape=(m,	)
+		:return: 			type=np.array,	shape=(m,	d)
 		'''
 		gc.enter_func()
-		gc.log(f'filenames = {filenames}')
+		filenames = filenames if type(filenames) == list else [filenames]
 		mfccs = []
-		if type(filenames) == list:
-			for fn in tqdm(filenames):
-				wave = wavio.read(fn)
-				sr, y = wave.rate, wave.data.ravel().astype(float)
-				mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr,
-													n_mfcc=const.N_MFCCS).T,
-							   axis=0)
-				mfccs.append(mfcc)
-			numpied = np.array(mfccs)
-		else:
-			wave = wavio.read(filenames)
-			sr, y = wave.rate, wave.data.ravel().astype(float)
-			mfcc = np.mean(librosa.feature.mfcc(y=y, sr=sr,
-												n_mfcc=const.N_MFCCS).T,
-						   axis=0)
-			numpied = np.array([mfcc])
-		return self._normalize(numpied)
+		for fn in tqdm(filenames):
+			mfcc = self._get_mfcc_from_fn(fn)
+			mfccs.append(mfcc)
+		numpied = np.array(mfccs)
+		transformed = self._transform_data(numpied)
+		return transformed
+
+	def preprocess_y(self, y):
+		'''
+		:param y:	type=list,		shape=(m,	)
+		:return: 	type=np.array,	shape=(m,	)
+		'''
+		return np.array(y)
+
+	def _transform_data(self, data):
+		'''
+		Transform the data numerically.
+		:param data:	type=np.array,	shape=(m,	d)
+		:return: 		type=np.array,	shape=(m,	d)
+		'''
+		centered = self._center(data)
+		normalized = self._normalize(centered)
+		return normalized
+
+	def _get_mfcc_from_fn(self, fn):
+		'''
+		Return the mel-frequency-cepstrum-coefficients of the .wav filename.
+		'''
+		wave = wavio.read(fn)
+		sr, y = wave.rate, wave.data.ravel().astype(float)
+		mfcc = np.mean(
+				librosa.feature.mfcc(y=y, sr=sr, n_mfcc=const.N_MFCCS).T,
+				axis=0)
+		return mfcc
+
+	def _center(self, X):
+		'''
+		Center the data around the origin.
+		:param X:	type=np.array,	shape=(m,	d)
+		:return: 	type=np.array,	shape=(m,	d)
+		'''
+		mean = np.mean(X)
+		centered = X - mean
+		return centered
 
 	def _normalize(self, X):
 		'''

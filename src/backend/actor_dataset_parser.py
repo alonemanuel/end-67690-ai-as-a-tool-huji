@@ -5,7 +5,6 @@ from enum import Enum
 
 import src.other.garcon as gc
 
-WAV_EXTN = '.wav'
 
 DATA_DIR = os.path.join('..', 'data')
 # ACTORS_DIR = os.path.join(DATA_DIR, 'Audio_Speech_Actors_01-24')
