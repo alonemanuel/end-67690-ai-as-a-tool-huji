@@ -51,7 +51,8 @@ class Preprocessor():
 		:param data:	type=np.array,	shape=(m,	d)
 		:return: 		type=np.array,	shape=(m,	d)
 		'''
-		centered = self._center(data)
+		# centered = self._center(data)
+		centered = data
 		normalized = self._normalize(centered)
 		return normalized
 

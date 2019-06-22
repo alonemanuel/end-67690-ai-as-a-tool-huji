@@ -40,7 +40,6 @@ class Recorder():
 		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '2_sad')
 		self._emotion_dirs[3] = os.path.join(EMOTIONS_DIR, '3_angry')
 
-
 	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT,
 			   shell_verbose=True):
 		gc.enter_func()
@@ -51,7 +50,8 @@ class Recorder():
 		return fn
 
 	def labelize_rec(self, rec_fn, label):
-		dest = os.path.join(self._emotion_dirs[label], os.path.basename(
+		dest = os.path.join(self._emotion_dirs[label], 'mine',
+							os.path.basename(
 				rec_fn))
 		shutil.copy(rec_fn, dest, follow_symlinks=True)
 
@@ -81,7 +81,8 @@ class Recorder():
 				self._countdown()
 			# audio_source = self._r.listen(source, timeout=1,
 			# 							  phrase_time_limit=MAX_REC_LENGTH)
-			audio_source = self._r.listen(source, phrase_time_limit=MAX_REC_LENGTH)
+			audio_source = self._r.listen(source,
+										  phrase_time_limit=MAX_REC_LENGTH)
 			if shell_verbose:
 				print(post_prompt)
 		return audio_source

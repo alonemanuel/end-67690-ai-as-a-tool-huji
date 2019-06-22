@@ -59,6 +59,9 @@ class SamplePage(tk.Frame):
 			child.config(state=tk.NORMAL)
 
 	def _assign_label(self, label):
+		'''
+		Assigns a label = moved recording to appropriate dir.
+		'''
 		print(f'label: {label}')
 		self._controller._recorder.labelize_rec(self._last_record_fn, label)
 

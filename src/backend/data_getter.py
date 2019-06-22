@@ -54,8 +54,10 @@ class DataGetter:
 		for emotion_dir in os.listdir(self._data_path):
 			emotion_dir_path = os.path.join(self._data_path, emotion_dir)
 			label = const.DIR_LABEL_DICT[emotion_dir]
-			for recording in os.listdir(emotion_dir_path):
-				recording_path = os.path.join(emotion_dir_path, recording)
-				X_all.append(recording_path)
-				y_all.append(label)
+			for dir in os.listdir(emotion_dir_path):
+				inner_dir = os.path.join(emotion_dir_path, dir)
+				for recording in os.listdir(inner_dir):
+					recording_path = os.path.join(inner_dir, recording)
+					X_all.append(recording_path)
+					y_all.append(label)
 		return X_all, y_all

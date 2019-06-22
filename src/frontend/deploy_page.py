@@ -1,7 +1,8 @@
 import tkinter as tk
 from winsound import *
-import src.other.garcon as gc
+
 import src.other.constants as const
+import src.other.garcon as gc
 
 class DeployPage(tk.Frame):
 
@@ -14,16 +15,31 @@ class DeployPage(tk.Frame):
 	def _init_widgets(self):
 		self._init_navigation_buttons()
 		self._init_learning_buttons()
+		self._init_predict_button()
 		self._init_debugging_buttons()
 
+	def _init_predict_button(self):
+		gc.enter_func()
+		self._predict_button = tk.Button(self, text="Predict",
+										 command=self._predict)
+		self._prediction_lbl = tk.Label(self)
+		self._prediction_lbl.pack()
+		self._predict_button.pack()
+
+	def _predict(self):
+		gc.enter_func()
+		prediction = self._controller.logic.predict(self._last_record_fn)
+		gc.log(f'prediction: {prediction}')
+		self._prediction_lbl.config(text=str(prediction[0]))
+
 	def _init_learning_buttons(self):
-		gc.log('initting learning button')
+		gc.enter_func()
 		self._learn_button = tk.Button(self, text='Learn',
 									   command=self._controller.logic.learn)
 		self._learn_button.pack()
 
-
 	def _init_debugging_buttons(self):
+		gc.enter_func()
 		self._record_btn = tk.Button(self, text='Record something',
 									 command=self._record)
 		self._record_btn.pack()
