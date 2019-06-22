@@ -16,8 +16,8 @@ class GUI(tk.Tk):
 
 		self.title_font = tkfont.Font(family='Helvetica', size=18,
 									  weight="bold")
-		self._recorder = recorder
-		self._logic = logic
+		self.recorder = recorder
+		self.logic = logic
 
 	def run(self):
 		self.mainloop()

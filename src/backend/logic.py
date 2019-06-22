@@ -1,8 +1,10 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.metrics import confusion_matrix, accuracy_score
-import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, accuracy_score
+
 import src.other.constants as const
 import src.other.garcon as gc
 from src.backend.data_getter import DataGetter
@@ -31,7 +33,17 @@ class Logic():
 
 		self._chosen_model = None
 
-	def init(self):
+	def init(self, in_deploy=False):
+		self._init_deploy() if in_deploy else self._init_prepare()
+
+	def _init_deploy(self):
+		gc.enter_func()
+		self._data_getter.init()
+		self._chosen_model=const.CHOSEN_MODEL()
+
+
+
+	def _init_prepare(self):
 		'''
 		Prepares the ground for the learning task.
 		:param verbose:	Should this process be verbose or not?
@@ -44,6 +56,14 @@ class Logic():
 								  self._y_train)
 		self._init_model()
 
+	def learn(self):
+		X_train, y_train, _, _ = \
+			self._data_getter.get_train_test(0.001)
+
+		X_prep = self._preprocessor.preprocess(X_train)
+		y_prep = np.array(y_train)
+		self._chosen_model.fit(X_prep, y_prep)
+
 	def predict(self, record_fns):
 		'''
 
@@ -55,9 +75,9 @@ class Logic():
 		prediction = self._chosen_model.predict(X)
 		return prediction
 
-	def _init_data(self):
+	def _init_data(self, test_ratio=const.TEST_RATIO):
 		self._X_train, self._y_train, self._X_test, self._y_test = \
-			self._data_getter.get_train_test()
+			self._data_getter.get_train_test(test_ratio)
 
 	def _init_model(self):
 		self._chosen_model, self._model_name = \
@@ -65,9 +85,10 @@ class Logic():
 		self._report(self._X_test, self._y_test, is_test=True)
 		X_all = self._X_train + self._X_test
 		y_all = self._y_train + self._y_test
-		# X_all = np.row_stack((self._X_train, self._X_test))
-		# y_all = np.row_stack((self._y_train, self._y_test))
-		# self._chosen_model.fit(self._X_train, self._y_train)
+
+	# X_all = np.row_stack((self._X_train, self._X_test))
+	# y_all = np.row_stack((self._y_train, self._y_test))
+	# self._chosen_model.fit(self._X_train, self._y_train)
 
 	# self._model_selector.report(self._chosen_model, self._X_test,
 	# 							self._y_test, is_test=True)

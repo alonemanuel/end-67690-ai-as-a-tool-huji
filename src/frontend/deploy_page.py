@@ -1,6 +1,6 @@
 import tkinter as tk
 from winsound import *
-
+import src.other.garcon as gc
 import src.other.constants as const
 
 class DeployPage(tk.Frame):
@@ -15,8 +15,13 @@ class DeployPage(tk.Frame):
 		self._init_navigation_buttons()
 		self._init_learning_buttons()
 		self._init_debugging_buttons()
+
 	def _init_learning_buttons(self):
-		pass
+		gc.log('initting learning button')
+		self._learn_button = tk.Button(self, text='Learn',
+									   command=self._controller.logic.learn)
+		self._learn_button.pack()
+
 
 	def _init_debugging_buttons(self):
 		self._record_btn = tk.Button(self, text='Record something',
@@ -25,7 +30,7 @@ class DeployPage(tk.Frame):
 		self._init_play_button()
 
 	def _record(self):
-		self._last_record_fn = self._controller._recorder.record(
+		self._last_record_fn = self._controller.recorder.record(
 				shell_verbose=False)
 		self._play_button.config(state=tk.NORMAL)
 

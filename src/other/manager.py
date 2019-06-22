@@ -14,8 +14,8 @@ class Manager():
 	def init(self):
 		gc.enter_func()
 		self._recorder.init()
+		self._logic.init(in_deploy=True)
 		self._gui.init()
-		# self._logic.init()
 
 
 	def run(self):

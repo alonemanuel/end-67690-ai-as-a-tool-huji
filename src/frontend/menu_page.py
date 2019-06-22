@@ -13,11 +13,13 @@ class MenuPage(tk.Frame):
 
 
 	def init_navigation(self):
-		print(len(self.controller._frames.keys()))
+		self._nav_buttons = tk.Frame(self)
+		self._nav_buttons.pack(side='bottom')
 		for page_name in self.controller._frames.keys():
 			if page_name == MenuPage.__name__:
 				continue
-			button = tk.Button(self, text=f'Enter {page_name}',
-							   command=lambda: self.controller._show_frame(
-									   page_name))
-			button.pack(side='bottom', pady=10)
+			button = tk.Button(self._nav_buttons, text=f'Enter {page_name}',
+							   command=lambda name=page_name:
+							   self.controller._show_frame(
+									   name))
+			button.pack(side='left', padx=10,pady=50)

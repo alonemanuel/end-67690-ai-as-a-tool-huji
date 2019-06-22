@@ -26,7 +26,7 @@ class DataGetter:
 		'''
 		self._X_all, self._y_all = self._get_all_data()
 
-	def get_train_test(self):
+	def get_train_test(self, test_ratio=const.TEST_RATIO):
 		'''
 		Returns train and test data.
 		:return:	type=tuple,	shape=4, where:
@@ -38,12 +38,8 @@ class DataGetter:
 		gc.enter_func()
 		X_train, X_test, y_train, y_test = train_test_split(self._X_all,
 															self._y_all,
-															test_size=const.TEST_RATIO,
+															test_size=test_ratio,
 															random_state=73)
-		gc.log(len(X_train))
-		gc.log(len(y_train))
-		gc.log(len(X_test))
-		gc.log(len(y_test))
 		return X_train, y_train, X_test, y_test
 
 	def _get_all_data(self):

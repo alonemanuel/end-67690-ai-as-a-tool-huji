@@ -31,6 +31,9 @@ class Models(Enum):
 		return self.value[MODEL_CLASS]
 
 
+CHOSEN_MODEL = LogisticRegression
+
+
 # Labels #
 LABEL_DICT = {0:'angry',1:'calm',2:'disgust',3:'fearful',4:'0_happy',5:'neutral',
 			  6:'2_sad',7:'surprised'}
