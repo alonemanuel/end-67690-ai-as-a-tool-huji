@@ -38,7 +38,7 @@ class Logic():
 
 	def _init_deploy(self):
 		gc.enter_func()
-		self._data_getter.init()
+		self._data_getter.init(in_deploy=True)
 		self._chosen_model=const.CHOSEN_MODEL()
 
 

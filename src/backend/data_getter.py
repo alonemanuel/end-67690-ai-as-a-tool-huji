@@ -5,7 +5,6 @@ from sklearn.model_selection import train_test_split
 import src.other.constants as const
 import src.other.garcon as gc
 
-
 I = 40
 
 class DataGetter:
@@ -13,18 +12,21 @@ class DataGetter:
 	Gets the initial raw (train + test) data.
 	'''
 
-	def __init__(self, data_dir_path=const.EMOTIONS_DIR,
-				 test_ratio=const.TEST_RATIO):
-		self._data_path = data_dir_path
+	def __init__(self, test_ratio=const.TEST_RATIO):
+		self._data_path = None
 		self._test_ratio = test_ratio
 		self._X_all, self._y_all = None, None
 
-	def init(self):
+	def init(self, in_deploy=False):
 		'''
 		Inits a DataGetter instance and gets it ready for action.
 		As part of the init, it collects the data.
 		'''
-		self._X_all, self._y_all = self._get_all_data()
+		if in_deploy:
+			self._data_path = const.DEPLOY_EMOTIONS_DIR
+		else:
+			self._data_path = const.EMOTIONS_DIR
+		self._X_all, self._y_all = self._get_all_data(in_deploy)
 
 	def get_train_test(self, test_ratio=const.TEST_RATIO):
 		'''
@@ -42,7 +44,7 @@ class DataGetter:
 															random_state=73)
 		return X_train, y_train, X_test, y_test
 
-	def _get_all_data(self):
+	def _get_all_data(self, in_deploy):
 		'''
 		Gets the training data from a local dir.
 		:return:	type=tuple,	shape=2, where:
@@ -50,6 +52,7 @@ class DataGetter:
 			tuple[1] = 	y_all:	type=list,	shape=(m,	)
 		'''
 		gc.enter_func()
+
 		X_all, y_all = [], []
 		for label, emotion_dir in enumerate(os.listdir(self._data_path)):
 			emotion_dir_path = os.path.join(self._data_path, emotion_dir)

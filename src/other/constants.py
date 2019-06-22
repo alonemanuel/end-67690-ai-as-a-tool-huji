@@ -49,6 +49,7 @@ LABEL_DICT = {0:'angry',1:'calm',2:'disgust',3:'fearful',4:'0_happy',5:'neutral'
 # Directories #
 DATA_DIR = os.path.join( '..','..', 'data')
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
+DEPLOY_EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions2')
 
 # Learning #
 # TEST_RATIO = 0.15
