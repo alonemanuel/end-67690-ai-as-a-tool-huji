@@ -12,24 +12,10 @@ class Manager():
 		'''
 		Inits a manager.
 		'''
-		self._logic = Logic(in_deploy=True)
+		self._logic = Logic()
 		self._recorder = Recorder()
 		self._gui = GUI(self._recorder, self._logic)
 
 	def run(self):
 		gc.enter_func()
 		self._gui.run()
-
-	# self._record_loop()
-
-	# self._gui.run()
-	# while not self._gui.should_exit():
-	# 	record_fn = self._gui.record()
-	# 	emotion = self._logic.predict(record_fn)
-	# 	self._gui.show_emotion(emotion)
-
-	def _record_loop(self):
-		for i in range(3):
-			fn = self._recorder.record()
-			label = self._logic.predict(fn)
-			print(f'{i}th prediction is: {label}')

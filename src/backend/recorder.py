@@ -30,6 +30,8 @@ class Recorder():
 		self._r = None
 		self._record_idx = 0
 		self._init_emotion_dirs()
+		gc.enter_func()
+		self._r = sr.Recognizer()
 
 	def _init_emotion_dirs(self):
 		self._emotion_dirs = {}
@@ -38,9 +40,6 @@ class Recorder():
 		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '2_sad')
 		self._emotion_dirs[3] = os.path.join(EMOTIONS_DIR, '3_angry')
 
-	def init(self):
-		gc.enter_func()
-		self._r = sr.Recognizer()
 
 	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT,
 			   shell_verbose=True):

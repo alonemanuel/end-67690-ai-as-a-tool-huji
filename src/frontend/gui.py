@@ -2,27 +2,40 @@ import tkinter as tk  # python 3
 from tkinter import font  as tkfont  # python 3
 
 import src.other.constants as const
+import src.other.garcon as gc
 from src.frontend.debug_page import DebugPage
 from src.frontend.deploy_page import DeployPage
 from src.frontend.menu_page import MenuPage
 from src.frontend.sample_page import SamplePage
-import src.other.garcon as gc
 
 class GUI(tk.Tk):
+	'''
+	The GUI module of the program.
+	'''
 
 	def __init__(self, recorder, logic, *args, **kwargs):
+		'''
+		Inits the GUI.
+		'''
 		tk.Tk.__init__(self, *args, **kwargs)
 		self.minsize(const.WINDOW_WIDTH, const.WINDOW_LENGTH)
-
 		self.title_font = tkfont.Font(family='Helvetica', size=18,
 									  weight="bold")
 		self.recorder = recorder
 		self.logic = logic
+		self._init_style()
 
 	def run(self):
+		'''
+		Runs the gui.
+		'''
 		self.mainloop()
 
-	def init(self):
+	def _init_style(self):
+		'''
+		Inits the style of the app.
+		:return:
+		'''
 		# the container is where we'll stack a bunch of frames
 		# on top of each other, then the one we want visible
 		# will be raised above the others
@@ -34,6 +47,10 @@ class GUI(tk.Tk):
 		self._show_frame(const.MENU_PAGE)
 
 	def _init_pages(self):
+		'''
+		Inits all pages used in the gui.
+		:return:
+		'''
 		self._frames = {}
 		for F in (MenuPage, DebugPage, DeployPage, SamplePage):
 			gc.log('entered')
