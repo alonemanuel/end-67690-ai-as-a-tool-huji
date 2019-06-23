@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/backend/data_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_getter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/recorder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/deploy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/deploy_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/sample_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/sample_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/garcon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/garcon.py" afterDir="false" />
-    </list>
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -297,7 +289,7 @@
             <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="445">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+                  <caret line="38" selection-start-line="38" selection-end-line="38" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
                   </folding>
@@ -448,6 +440,21 @@
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="0_happy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="0_happy" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -957,9 +964,6 @@
     <entry file="file://$PROJECT_DIR$/images/time_6_23_20_39/LogisticRegression_testset_just_centered.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_23_20_41/LogisticRegression_testset_just_centered.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_23_20_37/LogisticRegression_testset_no_transform.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1031,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -1048,6 +1052,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/time_6_23_20_41/LogisticRegression_testset_just_centered.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
