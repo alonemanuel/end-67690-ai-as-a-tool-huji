@@ -59,6 +59,7 @@ class SamplePage(tk.Frame):
 		'''
 		print(f'label: {label}')
 		self._controller.recorder.labelize_rec(self._last_record_fn, label)
+		self._disable_labels()
 
 	def _init_play_button(self):
 		play = lambda: PlaySound(self._last_record_fn, flags=SND_FILENAME)

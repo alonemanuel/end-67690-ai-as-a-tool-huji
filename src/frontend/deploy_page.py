@@ -29,7 +29,7 @@ class DeployPage(tk.Frame):
 	def _predict(self):
 		gc.enter_func()
 		prediction = self._controller.logic.predict(self._last_record_fn)
-		gc.log(f'prediction: {prediction}')
+		gc.log(f'prediction: {const.LABEL_DIR_DICT[prediction[0]]}')
 		self._prediction_lbl.config(text=str(prediction[0]))
 
 	def _init_learning_buttons(self):

@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.model_selection import GridSearchCV
 
 import src.other.constants as const
 import src.other.garcon as gc
@@ -18,12 +20,21 @@ class Logic():
 		'''
 		Inits a logic manager.
 		:var _X_train: 	type=list>filenames,	shape=(m_train,	)
-		:var _y_train: 	type=list>labels,		shape=(m_train,	)
+		:var _y_train: 	type=l	ist>labels,		shape=(m_train,	)
 		:var _X_train: 	type=list>filenames,	shape=(m_test,	)
 		:var _X_train: 	type=list>filenames,	shape=(m_train,	)
 		'''
-		self._learner = LogisticRegression()
-		self._learner_name = 'Logistic Regression'
+		# self._learner = LogisticRegression()
+		grid = {
+			'learning_rate': [0.03, 0.1, 0.5],
+			'n_estimators': [10, 50, 100, 300],
+			'max_depth': [1, 3, 9]
+		}
+
+		self._learner=GridSearchCV(GradientBoostingClassifier(), grid)
+		# self._learner = GridSearchCV(RandomForestClassifier(), grid)
+		# self._learner_name = 'Logistic Regression'
+		self._learner_name = 'Grid Search CV Boosted'
 		self._data_getter = DataGetter()
 		self._preprocessor = Preprocessor()
 

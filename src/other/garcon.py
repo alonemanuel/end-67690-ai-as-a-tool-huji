@@ -6,7 +6,7 @@ import time
 import matplotlib.pyplot as plt
 
 IMDIR = os.path.join('..', '..', 'images')
-COMMENT = 'just centered'
+COMMENT = 'grid more params'
 FN_COMMENT ='_'+COMMENT.replace(' ','_')
 
 class Garcon2:

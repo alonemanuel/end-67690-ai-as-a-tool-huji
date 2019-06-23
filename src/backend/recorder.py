@@ -7,7 +7,7 @@ import speech_recognition as sr
 import src.other.constants as const
 import src.other.garcon as gc
 
-MAX_REC_LENGTH = 7
+MAX_REC_LENGTH = const.MAX_REC_LENGTH
 
 DEF_TXT_PROMPT = ''
 
