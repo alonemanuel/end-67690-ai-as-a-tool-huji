@@ -32,7 +32,7 @@ class SamplePage(tk.Frame):
 		self._init_play_button()
 
 	def _record(self):
-		self._last_record_fn = self._controller._recorder.record(
+		self._last_record_fn = self._controller.recorder.record(
 				shell_verbose=False)
 		self._play_button.config(state=tk.NORMAL)
 		self._enable_labels()
@@ -55,7 +55,6 @@ class SamplePage(tk.Frame):
 
 	def _enable_labels(self):
 		for child in self._label_buttons.winfo_children():
-			gc.log('entered enable')
 			child.config(state=tk.NORMAL)
 
 	def _assign_label(self, label):
@@ -63,7 +62,7 @@ class SamplePage(tk.Frame):
 		Assigns a label = moved recording to appropriate dir.
 		'''
 		print(f'label: {label}')
-		self._controller._recorder.labelize_rec(self._last_record_fn, label)
+		self._controller.recorder.labelize_rec(self._last_record_fn, label)
 
 	def _init_play_button(self):
 		play = lambda: PlaySound(self._last_record_fn, flags=SND_FILENAME)

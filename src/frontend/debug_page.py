@@ -22,7 +22,7 @@ class DebugPage(tk.Frame):
 		self._init_play_button()
 
 	def _record(self):
-		self._last_record_fn = self._controller._recorder.record(
+		self._last_record_fn = self._controller.recorder.record(
 				shell_verbose=False)
 		self._play_button.config(state=tk.NORMAL)
 
