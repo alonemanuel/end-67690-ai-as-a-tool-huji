@@ -90,4 +90,4 @@ class Logic():
 		plt.ylabel('Predicted label')
 		fn_suffix = 'testset' if is_test else 'trainset'
 		fn_learner_name = self._learner_name.replace(' ', '')
-		gc.save_plt(f'{fn_learner_name}_{fn_suffix}')
+		gc.save_plt(f'{fn_learner_name}_{fn_suffix}', timed=True)

@@ -34,9 +34,11 @@ class DeployPage(tk.Frame):
 
 	def _init_learning_buttons(self):
 		gc.enter_func()
-		self._learn_button = tk.Button(self, text='Learn',
+		self._learning_frame = tk.Frame(self)
+		self._learning_frame.pack(side=tk.BOTTOM, padx=10, pady=10)
+		self._learn_button = tk.Button(self._learning_frame, text='Learn',
 									   command=self._controller.logic.learn)
-		self._test_button = tk.Button(self, text='Test',
+		self._test_button = tk.Button(self._learning_frame, text='Test',
 									  command=self._controller.logic.test)
 		self._learn_button.pack(side=tk.LEFT, pady=10, padx=10)
 		self._test_button.pack(side=tk.LEFT, pady=10, padx=10)

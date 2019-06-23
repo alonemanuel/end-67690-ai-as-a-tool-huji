@@ -5,7 +5,7 @@ import time
 
 import matplotlib.pyplot as plt
 
-IMDIR = os.path.join('..', '..','images')
+IMDIR = os.path.join('..', '..', 'images')
 
 class Garcon2:
 	first_gc = None
@@ -52,13 +52,36 @@ def init_plt(title=''):
 		title = call_frame[1][3]
 	plt.title(title)
 
-def save_plt(fn=''):
+def get_time_tag():
+	dtime = time.localtime()
+	base = ['time']
+	for i in range(1, 5):
+		base.append(str(dtime[i]))
+	base = '_'.join(base)
+	return base
+
+def save_plt_timed(fn):
+	if not fn:
+		curr_frame = inspect.currentframe()
+		call_frame = inspect.getouterframes(curr_frame, 2)
+		fn = call_frame[1][3]
+	plt.tight_layout()
+	time_tag = get_time_tag()
+	timed_dir = os.path.join(IMDIR, time_tag)
+	os.makedirs(timed_dir, exist_ok=True)
+	fn = os.path.join(timed_dir, fn)
+	plt.savefig(os.path.join(timed_dir, fn))
+
+def save_plt_untimed(fn):
 	if not fn:
 		curr_frame = inspect.currentframe()
 		call_frame = inspect.getouterframes(curr_frame, 2)
 		fn = call_frame[1][3]
 	plt.tight_layout()
 	plt.savefig(os.path.join(IMDIR, fn))
+
+def save_plt(fn='', timed=False):
+	save_plt_timed(fn) if timed else save_plt_untimed(fn)
 
 def log(*args):
 	print('Log:', end=' ')
