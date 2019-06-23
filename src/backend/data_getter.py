@@ -37,8 +37,7 @@ class DataGetter:
 		gc.enter_func()
 		X_train, X_test, y_train, y_test = train_test_split(self._X_all,
 															self._y_all,
-															test_size=test_ratio,
-															random_state=73)
+															test_size=test_ratio, shuffle=True)
 		return X_train, y_train, X_test, y_test
 
 	def _get_all_data(self):
@@ -52,6 +51,8 @@ class DataGetter:
 
 		X_all, y_all = [], []
 		for emotion_dir in os.listdir(self._data_path):
+			if emotion_dir == '1_surprised':
+				continue
 			emotion_dir_path = os.path.join(self._data_path, emotion_dir)
 			label = const.DIR_LABEL_DICT[emotion_dir]
 			for dir in os.listdir(emotion_dir_path):

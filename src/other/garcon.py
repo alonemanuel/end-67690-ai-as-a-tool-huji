@@ -6,6 +6,8 @@ import time
 import matplotlib.pyplot as plt
 
 IMDIR = os.path.join('..', '..', 'images')
+COMMENT = 'just centered'
+FN_COMMENT ='_'+COMMENT.replace(' ','_')
 
 class Garcon2:
 	first_gc = None
@@ -70,6 +72,7 @@ def save_plt_timed(fn):
 	timed_dir = os.path.join(IMDIR, time_tag)
 	os.makedirs(timed_dir, exist_ok=True)
 	fn = os.path.join(timed_dir, fn)
+	fn = fn + FN_COMMENT
 	plt.savefig(os.path.join(timed_dir, fn))
 
 def save_plt_untimed(fn):
@@ -78,6 +81,7 @@ def save_plt_untimed(fn):
 		call_frame = inspect.getouterframes(curr_frame, 2)
 		fn = call_frame[1][3]
 	plt.tight_layout()
+	fn = fn + FN_COMMENT
 	plt.savefig(os.path.join(IMDIR, fn))
 
 def save_plt(fn='', timed=False):

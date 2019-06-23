@@ -4,9 +4,10 @@ import time
 
 import speech_recognition as sr
 
+import src.other.constants as const
 import src.other.garcon as gc
 
-MAX_REC_LENGTH = 10
+MAX_REC_LENGTH = 7
 
 DEF_TXT_PROMPT = ''
 
@@ -36,9 +37,8 @@ class Recorder():
 	def _init_emotion_dirs(self):
 		self._emotion_dirs = {}
 		self._emotion_dirs[0] = os.path.join(EMOTIONS_DIR, '0_happy')
-		self._emotion_dirs[1] = os.path.join(EMOTIONS_DIR, '1_surprised')
-		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '2_sad')
-		self._emotion_dirs[3] = os.path.join(EMOTIONS_DIR, '3_angry')
+		self._emotion_dirs[1] = os.path.join(EMOTIONS_DIR, '2_sad')
+		self._emotion_dirs[2] = os.path.join(EMOTIONS_DIR, '3_angry')
 
 	def record(self, pre_prompt=DEF_PRE_PROMPT, post_prompt=DEF_POST_PROMPT,
 			   shell_verbose=True):
@@ -50,9 +50,11 @@ class Recorder():
 		return fn
 
 	def labelize_rec(self, rec_fn, label):
-		dest = os.path.join(self._emotion_dirs[label], 'mine',
-							os.path.basename(
-				rec_fn))
+		dest_base = os.path.basename(rec_fn)
+		splitted = os.path.splitext(dest_base)
+		label_txt = '_' + const.LABEL_DIR_DICT[label]
+		dest_base = splitted[0] + label_txt + splitted[1]
+		dest = os.path.join(self._emotion_dirs[label], 'mine', dest_base)
 		shutil.copy(rec_fn, dest, follow_symlinks=True)
 
 	def _get_fn(self):

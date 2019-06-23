@@ -13,8 +13,8 @@ class DeployPage(tk.Frame):
 		self._init_widgets()
 
 	def _init_widgets(self):
-		self._init_navigation_buttons()
 		self._init_learning_buttons()
+		self._init_navigation_buttons()
 		self._init_predict_button()
 		self._init_debugging_buttons()
 

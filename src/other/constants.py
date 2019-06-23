@@ -39,8 +39,8 @@ WAV_EXTN = '.wav'
 DATA_DIR = os.path.join('..', '..', 'data')
 EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 DEPLOY_EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions2')
-LABEL_DIR_DICT = {0: '0_happy', 1: '1_surprised', 2: '2_sad', 3: '3_angry'}
-DIR_LABEL_DICT = {'0_happy': 0, '1_surprised': 1, '2_sad': 2, '3_angry': 3}
+LABEL_DIR_DICT = {0: '0_happy', 1: '2_sad', 2: '3_angry'}
+DIR_LABEL_DICT = {'0_happy': 0, '2_sad': 1, '3_angry': 2}
 
 # Learning #
 # TEST_RATIO = 0.15
@@ -48,8 +48,10 @@ TEST_RATIO = 0.15
 N_MFCCS = 40
 
 # GUI #
-WINDOW_LENGTH = 720
-WINDOW_WIDTH = 1280
+# WINDOW_LENGTH = 720
+WINDOW_LENGTH = 500
+# WINDOW_WIDTH = 1280
+WINDOW_WIDTH = 500
 TITLE_TXT = 'emotio.'
 REC_TXT = 'Record'
 

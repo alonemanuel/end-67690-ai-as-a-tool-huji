@@ -2,7 +2,6 @@ import tkinter as tk
 from winsound import *
 
 import src.other.constants as const
-import src.other.garcon as gc
 
 class SamplePage(tk.Frame):
 
@@ -14,11 +13,8 @@ class SamplePage(tk.Frame):
 		self._init_widgets()
 
 	def _init_labels(self):
-		self._label_names = {}
-		self._label_names[0] = 'Happy'
-		self._label_names[1] = 'Surprised'
-		self._label_names[2] = 'Sad'
-		self._label_names[3] = 'Angry'
+		self._label_code_names = {0: 'Happy', 1: 'Sad', 2: 'Angry'}
+		self._labels_name_code = {'Happy': 0, 'Sad': 1, 'Angry': 2}
 
 	def _init_widgets(self):
 		self._init_navigation_buttons()
@@ -41,7 +37,7 @@ class SamplePage(tk.Frame):
 		self._label_buttons = tk.Frame(self)
 		self._label_buttons.pack()
 
-		for label, name in self._label_names.items():
+		for label, name in self._label_code_names.items():
 			print(label, name)
 			button = tk.Button(self._label_buttons, text=name,
 							   command=lambda label=label:

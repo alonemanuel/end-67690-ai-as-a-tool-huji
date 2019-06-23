@@ -51,11 +51,9 @@ class Preprocessor():
 		:param data:	type=np.array,	shape=(m,	d)
 		:return: 		type=np.array,	shape=(m,	d)
 		'''
-		# centered = self._center(data)
-		centered = data
-		normalized = self._normalize(centered)
-		return normalized
-
+		centered = self._center(data)
+		# normalized = self._normalize(centered)
+		return centered
 	def _get_mfcc_from_fn(self, fn):
 		'''
 		Return the mel-frequency-cepstrum-coefficients of the .wav filename.
