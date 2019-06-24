@@ -63,7 +63,7 @@ class DataGetter:
 					# recordings
 					if dir =='theirs':
 						toss = random.randint(0,3)
-						if toss:
+						if not toss:
 							continue
 					recording_path = os.path.join(inner_dir, recording)
 					X_all.append(recording_path)
