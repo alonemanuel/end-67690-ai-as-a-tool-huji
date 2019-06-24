@@ -26,9 +26,9 @@ class Logic():
 		'''
 		# self._learner = LogisticRegression()
 		grid = {
-			'learning_rate': [0.03, 0.1, 0.5],
-			'n_estimators': [10, 50, 100, 300],
-			'max_depth': [1, 3, 9]
+			'learning_rate': [0.1, 0.5],
+			'n_estimators': [100, 300],
+			'max_depth': [3, 9]
 		}
 
 		self._learner=GridSearchCV(GradientBoostingClassifier(), grid)

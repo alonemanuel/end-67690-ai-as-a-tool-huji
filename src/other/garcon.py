@@ -6,7 +6,7 @@ import time
 import matplotlib.pyplot as plt
 
 IMDIR = os.path.join('..', '..', 'images')
-COMMENT = 'grid more params'
+COMMENT = 'all of theirs'
 FN_COMMENT ='_'+COMMENT.replace(' ','_')
 
 class Garcon2:
