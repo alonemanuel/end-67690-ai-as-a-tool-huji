@@ -59,11 +59,12 @@ class DataGetter:
 			for dir in os.listdir(emotion_dir_path):
 				inner_dir = os.path.join(emotion_dir_path, dir)
 				for recording in os.listdir(inner_dir):
-					# Uncomment this to sample only a third of their recordings
-					# if dir =='theirs':
-					# 	toss = random.randint(0,3)
-					# 	if toss:
-					# 		continue
+					# Comment/Uncomment this to sample only a third of their
+					# recordings
+					if dir =='theirs':
+						toss = random.randint(0,3)
+						if toss:
+							continue
 					recording_path = os.path.join(inner_dir, recording)
 					X_all.append(recording_path)
 					y_all.append(label)

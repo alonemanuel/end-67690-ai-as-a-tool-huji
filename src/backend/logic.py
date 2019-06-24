@@ -43,7 +43,7 @@ class Logic():
 		Basically, fits the learner with the most relevant training data.
 		'''
 		X_train, y_train = self._data_getter.get_train_data()
-		X_prep = self._preprocessor.preprocess_X(X_train)
+		X_prep = self._preprocessor.fit_and_prep_X(X_train)
 		y_prep = self._preprocessor.preprocess_y(y_train)
 		self._learner.fit(X_prep, y_prep)
 
@@ -71,7 +71,7 @@ class Logic():
 		y:	type=list,	shape=(m,	)
 		'''
 		gc.enter_func()
-		X_train_prep = self._preprocessor.preprocess_X(X_train)
+		X_train_prep = self._preprocessor.fit_and_prep_X(X_train)
 		y_train_prep = self._preprocessor.preprocess_y(y_train)
 		self._learner.fit(X_train_prep, y_train_prep)
 		y_train_pred = self._learner.predict(X_train_prep)

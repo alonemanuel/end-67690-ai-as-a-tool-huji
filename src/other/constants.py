@@ -45,7 +45,7 @@ DIR_LABEL_DICT = {'0_happy': 0, '2_sad': 1, '3_angry': 2}
 # Learning #
 # TEST_RATIO = 0.15
 TEST_RATIO = 0.15
-N_MFCCS = 70
+N_MFCCS = 100
 # N_MFCCS = 13
 MAX_REC_LENGTH = 5
 
