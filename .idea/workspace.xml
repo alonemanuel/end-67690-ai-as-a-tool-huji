@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/backend/data_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_getter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/deploy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/deploy_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/garcon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/garcon.py" afterDir="false" />
-    </list>
+    <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -102,7 +95,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="72" />
+          <entry key="png" value="74" />
           <entry key="py" value="64" />
           <entry key="wav" value="1" />
         </counts>
@@ -110,7 +103,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="1" />
-          <entry key="Image" value="72" />
+          <entry key="Image" value="74" />
           <entry key="Python" value="64" />
         </counts>
       </usages-collector>
@@ -155,16 +148,26 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/other/constants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state relative-caret-position="367">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_trainset_third_of_theirs.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_testset_third_of_theirs.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -185,30 +188,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/time_6_24_18_6/GridSearchCVBoosted_testset_third_of_theirs.png">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/backend/preprocessor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1561395083575" expanded="true" signature="339:460" ph="..." />
-                <marker date="1561395083575" expanded="true" signature="695:921" ph="..." />
-                <marker date="1561395083575" expanded="true" signature="1351:1352" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/alon_emanuel_drive/School/Year2/Semester2/67690_AI_as_a_Tool/venvs/prosody-venv/Lib/site-packages/sklearn/preprocessing/data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="752" selection-start-line="752" selection-end-line="752" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -380,6 +359,12 @@
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
               <item name="time_6_24_19_55" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="time_6_24_19_56" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -611,12 +596,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/time_6_23_20_45/LogisticRegression_testset_just_centered.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_23_20_45/LogisticRegression_trainset_just_centered.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/other/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2244" />
@@ -837,13 +816,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        <state relative-caret-position="367">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_trainset_third_of_theirs.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_testset_third_of_theirs.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
