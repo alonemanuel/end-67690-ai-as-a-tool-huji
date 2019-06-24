@@ -6,7 +6,7 @@ import time
 import matplotlib.pyplot as plt
 
 IMDIR = os.path.join('..', '..', 'images')
-COMMENT = 'third plus 100 mfccs'
+COMMENT = 'sampled shaked'
 FN_COMMENT ='_'+COMMENT.replace(' ','_')
 
 class Garcon2:
