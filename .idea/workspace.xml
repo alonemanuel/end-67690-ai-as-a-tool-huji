@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/backend/data_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_getter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/garcon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/garcon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions2/0_happy/rec_6_24_20_25_50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/emotions2/0_happy/rec_6_24_20_26_43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_23_43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_24_29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_24_54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_25_16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_25_32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/rec_6_24_20_25_7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/deploy_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/deploy_page.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +23,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/EndProject$bucky.coverage" NAME="bucky Coverage Results" MODIFIED="1560976193500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/online/frontend" />
-    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1561396340384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
+    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1561398865230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
     <SUITE FILE_PATH="coverage/EndProject$main.coverage" NAME="main Coverage Results" MODIFIED="1561322108890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="DatabaseView">
@@ -99,7 +106,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="76" />
-          <entry key="py" value="66" />
+          <entry key="py" value="69" />
           <entry key="wav" value="1" />
         </counts>
       </usages-collector>
@@ -107,20 +114,20 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Image" value="76" />
-          <entry key="Python" value="66" />
+          <entry key="Python" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="229" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="9542" />
+          <entry key="py" value="9565" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="9771" />
+          <entry key="Python" value="9794" />
         </counts>
       </usages-collector>
     </session>
@@ -145,13 +152,8 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_20_14/GridSearchCVBoosted_testset_two_thirds_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_19_55/GridSearchCVBoosted_testset_third_of_theirs.png">
+        <entry file="file://$PROJECT_DIR$/images/time_6_24_20_14/GridSearchCVBoosted_testset_two_thirds_of_theirs.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -178,13 +180,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_16_58/GridSearchCVBoosted_trainset_all_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_16_58/GridSearchCVBoosted_testset_all_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/frontend/debug_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -295,12 +322,12 @@
         <option value="$PROJECT_DIR$/src/frontend/debug_page.py" />
         <option value="$PROJECT_DIR$/src/frontend/sample_page.py" />
         <option value="$PROJECT_DIR$/src/backend/recorder.py" />
-        <option value="$PROJECT_DIR$/src/frontend/deploy_page.py" />
         <option value="$PROJECT_DIR$/src/backend/preprocessor.py" />
         <option value="$PROJECT_DIR$/src/backend/logic.py" />
         <option value="$PROJECT_DIR$/src/other/constants.py" />
         <option value="$PROJECT_DIR$/src/backend/data_getter.py" />
         <option value="$PROJECT_DIR$/src/other/garcon.py" />
+        <option value="$PROJECT_DIR$/src/frontend/deploy_page.py" />
       </list>
     </option>
   </component>
@@ -310,8 +337,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="848" />
+    <option name="y" value="287" />
     <option name="width" value="978" />
     <option name="height" value="1089" />
   </component>
@@ -340,6 +368,43 @@
               <item name="EndProject" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="0_happy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="0_happy" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="2_sad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="2_sad" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
+              <item name="3_angry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -564,14 +629,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="679" y="230" width="782" height="871" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19127516" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.50277007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.3229308" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2590604" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2777778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,9 +676,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/time_6_23_20_49/LogisticRegression_trainset_just_centered.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_23_20_41/LogisticRegression_testset_just_centered.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -680,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_2_6/GridSearchCVBoosted_trainset_grid_more_params.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -710,16 +762,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_17_0/GridSearchCVBoosted_trainset_third_of_theirs.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_18_6/GridSearchCVBoosted_trainset_third_of_theirs.png">
       <provider selected="true" editor-type-id="images" />
@@ -808,9 +850,6 @@
     <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_trainset_third_of_theirs.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_testset_third_of_theirs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/backend/data_getter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -838,6 +877,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_20_14/GridSearchCVBoosted_testset_two_thirds_of_theirs.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/time_6_24_19_56/GridSearchCVBoosted_testset_third_of_theirs.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/debug_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

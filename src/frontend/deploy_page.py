@@ -10,6 +10,7 @@ class DeployPage(tk.Frame):
 		tk.Frame.__init__(self, parent)
 		self._controller = controller
 		self._init_title()
+		self._init_labels()
 		self._init_widgets()
 
 	def _init_widgets(self):
@@ -17,6 +18,40 @@ class DeployPage(tk.Frame):
 		self._init_navigation_buttons()
 		self._init_predict_button()
 		self._init_debugging_buttons()
+		self._init_sample_buttons()
+
+	def _init_sample_buttons(self):
+		self._label_buttons = tk.Frame(self)
+		self._label_buttons.pack()
+
+		for label, name in self._label_code_names.items():
+			print(label, name)
+			button = tk.Button(self._label_buttons, text=name,
+							   command=lambda label=label:
+							   self._assign_label(label))
+			button.pack(side='left', padx=10)
+		self._disable_labels()
+
+	def _init_labels(self):
+		self._label_code_names = {0: 'Happy', 1: 'Sad', 2: 'Angry'}
+		self._labels_name_code = {'Happy': 0, 'Sad': 1, 'Angry': 2}
+
+	def _disable_labels(self):
+		for child in self._label_buttons.winfo_children():
+			child.config(state=tk.DISABLED)
+
+	def _enable_labels(self):
+		for child in self._label_buttons.winfo_children():
+			child.config(state=tk.NORMAL)
+
+	def _assign_label(self, label):
+		'''
+		Assigns a label = moved recording to appropriate dir.
+		'''
+		print(f'label: {label}')
+		self._controller.recorder.labelize_rec(self._last_record_fn,
+											   label)
+		self._disable_labels()
 
 	def _init_predict_button(self):
 		gc.enter_func()
@@ -56,6 +91,7 @@ class DeployPage(tk.Frame):
 		self._last_record_fn = self._controller.recorder.record(
 				shell_verbose=False)
 		self._play_button.config(state=tk.NORMAL)
+		self._enable_labels()
 
 	def _init_play_button(self):
 		play = lambda: PlaySound(self._last_record_fn, flags=SND_FILENAME)
