@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/other/garcon.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/garcon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -301,10 +301,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="656" />
-    <option name="width" value="1260" />
-    <option name="height" value="1089" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -353,14 +354,6 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="emotions2" type="462c0819:PsiDirectoryNode" />
               <item name="2_sad" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EndProject" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="emotions2" type="462c0819:PsiDirectoryNode" />
-              <item name="2_sad" type="462c0819:PsiDirectoryNode" />
-              <item name="mine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EndProject" type="b2602c69:ProjectViewProjectNode" />
@@ -599,12 +592,12 @@
   <component name="ToolWindowManager">
     <frame x="525" y="0" width="1008" height="871" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41033757" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.41033757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.3229308" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2777778" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2777778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
