@@ -55,7 +55,7 @@ class Recorder():
 		label_txt = '_' + const.LABEL_DIR_DICT[label]
 		dest_base = splitted[0] + label_txt + splitted[1]
 		dest = os.path.join(self._emotion_dirs[label], 'mine', dest_base)
-		shutil.copy(rec_fn, dest, follow_symlinks=True)
+		shutil.move(rec_fn, dest)
 
 	def _get_fn(self):
 		dtime = time.localtime()
