@@ -41,6 +41,9 @@ EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions')
 DEPLOY_EMOTIONS_DIR = os.path.join(DATA_DIR, 'emotions2')
 LABEL_DIR_DICT = {0: '0_happy', 1: '2_sad', 2: '3_angry'}
 DIR_LABEL_DICT = {'0_happy': 0, '2_sad': 1, '3_angry': 2}
+LABEL_COLOR_DICT = {0: 'yellow', 1: 'blue', 2: 'red'}
+COLOR_TO_TEXT_COLOR_DICT = {'yellow': 'black', 'blue': 'white', 'red': 'white'}
+LABEL_TEXT_DICT = {0: 'Happy', 1: 'Sad', 2: 'Angry'}
 
 # Learning #
 # TEST_RATIO = 0.15
@@ -51,12 +54,32 @@ MAX_REC_LENGTH = 5
 
 # GUI #
 # WINDOW_LENGTH = 720
-WINDOW_LENGTH = 250
+WINDOW_LENGTH = 400
 # WINDOW_WIDTH = 1280
-WINDOW_WIDTH = 100
+WINDOW_WIDTH = 330
 TITLE_TXT = 'emotio.'
 REC_TXT = 'Record'
+
+RELX_W = 0.25
+RELX_E = 0.75
+RELY_N = 0.38
+RELY_S = 0.79
+
+WIDGET_WIDTH = 13
+WIDGET_HEIGHT = 6
+
+HAPPY_LBL = 0
+HAPPY_BG = 'yellow'
+HAPPY_FG = 'black'
+SAD_LBL = 1
+SAD_BG = 'blue'
+SAD_FG = 'white'
+ANGRY_LBL = 2
+ANGRY_BG = 'red'
+ANGRY_FG = 'white'
 
 MENU_PAGE = 'MenuPage'
 DEPLOY_PAGE = 'DeployPage'
 DEBUG_PAGE = 'DebugPage'
+LEARN_PAGE = 'LearnPage'
+EMOTIO_PAGE = 'EmotioPage'

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb3f3b0-2f28-4eef-9be6-34d1bb28796b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/recorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/menu_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/menu_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/manager.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/EndProject$bucky.coverage" NAME="bucky Coverage Results" MODIFIED="1560976193500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/online/frontend" />
-    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1561451083548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
+    <SUITE FILE_PATH="coverage/EndProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1561468044836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/other" />
     <SUITE FILE_PATH="coverage/EndProject$main.coverage" NAME="main Coverage Results" MODIFIED="1561322108890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="DatabaseView">
@@ -99,7 +101,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="92" />
-          <entry key="py" value="77" />
+          <entry key="py" value="95" />
           <entry key="wav" value="1" />
         </counts>
       </usages-collector>
@@ -107,48 +109,63 @@
         <counts>
           <entry key="CSV" value="1" />
           <entry key="Image" value="92" />
-          <entry key="Python" value="77" />
+          <entry key="Python" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="229" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="9619" />
+          <entry key="py" value="14835" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="9848" />
+          <entry key="Python" value="15064" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/garcon.py">
+        <entry file="file://$PROJECT_DIR$/src/other/manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1561410969616" expanded="true" signature="1846:2055" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_25_0_17/GridSearchCVBoosted_testset_sampled_shaked.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/other/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/other/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-58">
               <caret line="33" column="34" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -160,52 +177,81 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/backend/recorder.py">
+        <entry file="file://$PROJECT_DIR$/src/frontend/emotio_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+            <state relative-caret-position="185">
+              <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1561468043890" expanded="true" signature="596:833" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="1688:1689" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="2405:2408" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="2835:3006" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="4655:4948" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="5159:5184" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="5206:5590" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="5614:5617" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="5759:5811" ph="..." />
+                <marker date="1561468043890" expanded="true" signature="5885:5888" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_23_57/GridSearchCVBoosted_testset_third_plus_100_mfccs.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_25_0_17/GridSearchCVBoosted_trainset_sampled_shaked.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/other/main.py">
+        <entry file="file://C:/Program Files/Python37/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="162">
+              <caret line="2368" selection-start-line="2368" selection-end-line="2368" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/alon_emanuel_drive/School/Year2/Semester2/67690_AI_as_a_Tool/venvs/prosody-venv/Lib/shutil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-290">
+              <caret line="570" selection-start-line="570" selection-end-line="570" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frontend/learn_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="49" column="54" lean-forward="true" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1561465758907" expanded="true" signature="830:1184" ph="..." />
+                <marker date="1561465758907" expanded="true" signature="1381:1384" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_21_35/GridSearchCVBoosted_testset_third_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-632">
+              <caret line="11" selection-start-line="11" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_21_20/GridSearchCVBoosted_testset_two_thirds_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/time_6_24_20_14/GridSearchCVBoosted_testset_two_thirds_of_theirs.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="30" column="56" selection-start-line="29" selection-start-column="31" selection-end-line="30" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -227,7 +273,6 @@
       <find>__labels_</find>
       <find>self.__labels</find>
       <find>idx</find>
-      <find>listen</find>
       <find>-</find>
       <find>__</find>
       <find>verbos</find>
@@ -242,6 +287,8 @@
       <find>_logic</find>
       <find>_rec</find>
       <find>enable</find>
+      <find>_init_learn_button</find>
+      <find>listen</find>
     </findStrings>
     <replaceStrings>
       <replace>_</replace>
@@ -258,10 +305,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tutorial/helloworld.ts" />
-        <option value="$PROJECT_DIR$/Tutorial/main.js" />
-        <option value="$PROJECT_DIR$/Tutorial/main.ts" />
-        <option value="$PROJECT_DIR$/src/test" />
         <option value="$PROJECT_DIR$/src/recorder.py" />
         <option value="$PROJECT_DIR$/data/words_to_sample" />
         <option value="$PROJECT_DIR$/data/labels_to_sample" />
@@ -295,20 +338,24 @@
         <option value="$PROJECT_DIR$/src/online/frontend/gui.py" />
         <option value="$PROJECT_DIR$/src/frontend/manager.py" />
         <option value="$PROJECT_DIR$/src/backend/model_selector.py" />
-        <option value="$PROJECT_DIR$/src/frontend/menu_page.py" />
         <option value="$PROJECT_DIR$/src/backend/actor_dataset_parser.py" />
-        <option value="$PROJECT_DIR$/src/other/manager.py" />
         <option value="$PROJECT_DIR$/src/other/main.py" />
-        <option value="$PROJECT_DIR$/src/frontend/gui.py" />
         <option value="$PROJECT_DIR$/src/frontend/debug_page.py" />
         <option value="$PROJECT_DIR$/src/frontend/sample_page.py" />
         <option value="$PROJECT_DIR$/src/backend/preprocessor.py" />
         <option value="$PROJECT_DIR$/src/backend/logic.py" />
         <option value="$PROJECT_DIR$/src/frontend/deploy_page.py" />
         <option value="$PROJECT_DIR$/src/backend/data_getter.py" />
-        <option value="$PROJECT_DIR$/src/other/constants.py" />
         <option value="$PROJECT_DIR$/src/other/garcon.py" />
         <option value="$PROJECT_DIR$/src/backend/recorder.py" />
+        <option value="$PROJECT_DIR$/src/other/manager.py" />
+        <option value="$PROJECT_DIR$/src/other/tutorial.py" />
+        <option value="$PROJECT_DIR$/src/other/client.py" />
+        <option value="$PROJECT_DIR$/src/frontend/menu_page.py" />
+        <option value="$PROJECT_DIR$/src/frontend/gui.py" />
+        <option value="$PROJECT_DIR$/src/frontend/learn_page.py" />
+        <option value="$PROJECT_DIR$/src/other/constants.py" />
+        <option value="$PROJECT_DIR$/src/frontend/emotio_page.py" />
       </list>
     </option>
   </component>
@@ -319,10 +366,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-8" />
+    <option name="width" value="1133" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -405,15 +451,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\images\time_6_24_0_51" />
       <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\images\time_6_23_20_39" />
       <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\images\time_6_23_16_51_58" />
       <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\images\old2" />
       <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\data\emotions2\2_sad\theirs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\My Drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\src\backend" />
+      <recent name="E:\alon_emanuel_drive\School\Year2\Semester2\67690_AI_as_a_Tool\EndProject\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -541,12 +588,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16979866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.252349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.3229308" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2751678" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49798658" weight="0.32080537" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28322148" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.56987786" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -586,44 +633,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_29/GridSearchCVBoosted_testset_coin_toss.png" />
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_21/GridSearchCVBoosted_trainset_coin_toss.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_21/GridSearchCVBoosted_testset_coin_toss.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_26/GridSearchCVBoosted_trainset_coin_toss.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_26/GridSearchCVBoosted_testset_coin_toss.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_1_8/LogisticRegression_trainset_100_mfccs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_1_8/LogisticRegression_testset_100_mfccs.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_6/GridSearchCVBoosted_trainset_grid_more_params.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_2_6/GridSearchCVBoosted_testset_grid_more_params.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/time_6_24_1_29/GridSearchCVBoosted_trainset_grid_more_params.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_1_29/GridSearchCVBoosted_testset_grid_more_params.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -643,13 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="537" selection-start-line="537" selection-end-line="537" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Python37/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="1704" selection-start-line="1704" selection-end-line="1704" />
         </state>
       </provider>
     </entry>
@@ -685,26 +687,6 @@
     <entry file="file://$PROJECT_DIR$/src/frontend/debug_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -766,16 +748,6 @@
     <entry file="file://$PROJECT_DIR$/images/time_6_24_22_38/GridSearchCVBoosted_trainset_third_plus_13_mfccs.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/other/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/time_6_24_23_57/GridSearchCVBoosted_trainset_third_plus_100_mfccs.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -821,9 +793,116 @@
     <entry file="file://$PROJECT_DIR$/images/time_6_25_0_17/GridSearchCVBoosted_testset_sampled_shaked.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
+    <entry file="file://$PROJECT_DIR$/src/backend/recorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/communicator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Year1/sem1/intro/week12/sub12_intro/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="331" column="43" selection-start-line="331" selection-start-column="43" selection-end-line="331" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Year1/sem1/intro/week12/sub12_intro/four_in_a_row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4741">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/menu_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1561460514045" expanded="true" signature="979:1067" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/sample_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="11" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/learn_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="49" column="54" lean-forward="true" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1561465758907" expanded="true" signature="830:1184" ph="..." />
+            <marker date="1561465758907" expanded="true" signature="1381:1384" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/other/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
           <caret line="33" column="34" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
@@ -833,12 +912,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/recorder.py">
+    <entry file="file://E:/alon_emanuel_drive/School/Year2/Semester2/67690_AI_as_a_Tool/venvs/prosody-venv/Lib/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        <state relative-caret-position="-290">
+          <caret line="570" selection-start-line="570" selection-end-line="570" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/deploy_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="56" selection-start-line="29" selection-start-column="31" selection-end-line="30" selection-end-column="56" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python37/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="2368" selection-start-line="2368" selection-end-line="2368" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/emotio_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1561468043890" expanded="true" signature="596:833" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="1688:1689" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="2405:2408" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="2835:3006" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="4655:4948" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="5159:5184" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="5206:5590" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="5614:5617" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="5759:5811" ph="..." />
+            <marker date="1561468043890" expanded="true" signature="5885:5888" ph="..." />
           </folding>
         </state>
       </provider>

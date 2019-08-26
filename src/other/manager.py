@@ -1,3 +1,5 @@
+import socket
+
 import src.other.garcon as gc
 from src.backend.logic import Logic
 from src.backend.recorder import Recorder
@@ -18,4 +20,5 @@ class Manager():
 
 	def run(self):
 		gc.enter_func()
+		print(socket.gethostbyname(socket.gethostname()))
 		self._gui.run()
