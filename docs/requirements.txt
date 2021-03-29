@@ -54,7 +54,7 @@ pyasn1==0.4.5
 PyAudio==0.2.11
 pycparser==2.19
 pydivert==2.1.0
-Pygments==2.2.0
+Pygments==2.7.4
 pyparsing==2.2.2
 pyperclip==1.6.5
 python-dateutil==2.7.3
